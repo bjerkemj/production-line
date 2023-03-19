@@ -1,0 +1,5 @@
+Tanker:
+
+Jeg tenker at vi må bruke sånn 'listener'/'observer' prinsippet fra java for å oppdate 'states'.
+
+Lager en mappe som jeg kaller dokumentasjon hvor vi lagrer dokumentasjon, plots etc. forløpende siden vi skal tracke og begrunne valg vi gjør underveis.
