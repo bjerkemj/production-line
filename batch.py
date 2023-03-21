@@ -10,7 +10,7 @@ class Batch:
         return f'Batch {self.batchNumber} of size {self.batchSize}'
     
     def getBatchSize(self) -> int:
-        return self.batchNumber
+        return self.batchSize
     
-    def getBatchNumbers(self) -> str:
+    def getBatchNumber(self) -> str:
         return self.batchNumber
