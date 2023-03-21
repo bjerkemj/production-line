@@ -30,7 +30,9 @@ class Buffer:
         """ Needs time management """
         if self.canAddBatch(batch):
             self.batches.append(batch)
+            print(f'{str(batch)} loaded to {str(self)}')
             self.updateNumberOfWafersInBuffer()
+            print(f'{str(self)} now contains {self.numberOfWafersInBuffer} wafers')
             if self.isFinalBuffer:
                 print(f'Finished processing batch {str(batch)}. It is now in the final buffer.')
 
@@ -46,7 +48,12 @@ class Buffer:
         """ Needs time management. Returns the batch first added to the buffer (FIFO). Should be changed later. """
         if self.hasBatchReadyToProcess():
             self.numberOfWafersInBuffer = self.numberOfWafersInBuffer - self.batches[0].getBatchSize()
+            print(f'{str(self.batches[0])} unloaded from {str(self)}')
+            print(f'{str(self)} now contains {self.numberOfWafersInBuffer} wafers')
             return self.batches.pop(0)
+        
+    def getOldestBatchFromBuffer(self) -> Batch:
+        return self.batches[0]
         
     def hasBatchReadyToProcess(self) -> bool:
         return len(self.batches) > 0

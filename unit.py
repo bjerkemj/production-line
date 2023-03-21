@@ -13,6 +13,7 @@ class Unit:
 
     def processNextBatch(self) -> None:
         if any([task.hasBatchReadyToProcess() for task in self.tasks]):
+            print(str(self), 'is processing a batch')
             for task in self.tasks:
                 if task.hasBatchReadyToProcess():
                     task.processNextBatch()

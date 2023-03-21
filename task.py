@@ -20,13 +20,11 @@ class Task:
 
     def processNextBatch(self) -> None:
         # Mangler time management
-        if self.hasBatchReadyToProcess():
+        if self.hasBatchReadyToProcess() and self.outputBuffer.canAddBatch(self.inputBuffer.getOldestBatchFromBuffer()):
             batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer()
             processingTime = batchToProcess.getBatchSize() * self.processingRate
-            if self.outputBuffer.canAddBatch(batchToProcess):
-                self.outputBuffer.loadBatchToBuffer(batchToProcess)
-            else:
-                print(f'{str(batchToProcess)} was processed in task {self.taskNumber} but the outbutBuffer {self.outputBuffer.getBufferNumber()} did not have the capacity to load the batch so the batch was discarded')
+            print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes')
+            self.outputBuffer.loadBatchToBuffer(batchToProcess)
         else:
             print('No batches to process')
 

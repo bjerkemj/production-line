@@ -1,5 +1,21 @@
-Tanker:
-
-Jeg tenker at vi må bruke sånn 'listener'/'observer' prinsippet fra java for å oppdate 'states'.
 
 Lager en mappe som jeg kaller dokumentasjon hvor vi lagrer dokumentasjon, plots etc. forløpende siden vi skal tracke og begrunne valg vi gjør underveis.
+
+Se DES_COMPONENTS 1 og 2:
+
+Entities: batches
+
+Generators: load batches into production line? Only generator?
+
+Inter-arrival times: Ved både buffers og tasks?
+
+Activites/servers: unloading batch from buffer to task. Loading batch from task to buffer. Perform task on batch.
+
+Activity/server time: Tiden det tar for å unloade batch from buffer to task, load batch from task to buffer and perform task on batch.
+
+Resources: Det er units (tenk at en operator må utføre en task, og det er kun én operator per unit, eller at alle tasks i en unit bruker samme maskin, så flere tasks på samme maskin funker ikke)
+
+Queues: Rett før unit/task
+
+Sinks: Kun den siste bufferNumber
+
