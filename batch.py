@@ -29,7 +29,8 @@ class Batch:
 
 
 def batchGenerator(batchSize: int = 20) -> Batch:
-    batchNumber = 0
+    batchNumber = 1
     while True:
-        batchNumber += 1
+        
         yield Batch(batchNumber, batchSize)
+        batchNumber += 1

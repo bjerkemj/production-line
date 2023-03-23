@@ -15,23 +15,25 @@ class ProductionLine:
     def __init__(self, eventQueue: EventQueue) -> None:
         self.buffers = []
         self.tasks = []
-        self.buffers.append(Buffer('0'), eventQueue)
+        self.buffers.append(Buffer('0', eventQueue, isFirstBuffer=True))
         for i in range(1, 10):
             idNumber = str(i)
-            self.buffers.append(Buffer(idNumber), eventQueue)
+            self.buffers.append(Buffer(idNumber, eventQueue))
             self.tasks.append(Task(idNumber, self.buffers[-2], self.buffers[-1], eventQueue))
         self.buffers[-1].capacity = math.inf
         self.buffers[-1].isFinalBuffer = True
-        unit1 = Unit('1', [task for task in self.tasks if task.taskNumber in ProductionLine.unit1TaskNumbers], eventQueue)
-        unit2 = Unit('2', [task for task in self.tasks if task.taskNumber in ProductionLine.unit2TaskNumbers], eventQueue)
-        unit3 = Unit('3', [task for task in self.tasks if task.taskNumber in ProductionLine.unit3TaskNumbers], eventQueue)
+        self.buffers[0].setProductionLine(self)
+        unit1 = Unit('1', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit1TaskNumbers])
+        unit2 = Unit('2', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit2TaskNumbers])
+        unit3 = Unit('3', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit3TaskNumbers])
         self.units = [unit1, unit2, unit3]
+        self.eventQueue = eventQueue
 
     
 
-    def loadBatchToProductionLine(self, batch: Batch) -> None:
+    def loadBatchToProductionLine(self, time:float, batch: Batch) -> None:
         if self.buffers[0].canAddBatch(batch):
-            self.buffers[0].loadBatchToBuffer(batch)
+            self.buffers[0].loadBatchToBuffer(time, batch)
 
     
 if __name__ == '__main__':
