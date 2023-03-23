@@ -3,12 +3,15 @@ from task import Task
 
 class Unit:
 
-    def __init__(self, unitNumber: str, tasks: List[Task]) -> None:
+    def __init__(self, unitNumber: str, tasks: List[Task] = []) -> None:
         self.unitNumber = unitNumber
         self.tasks = tasks
 
     def __repr__(self) -> str:
         return f'Unit {self.unitNumber}'
+    
+    def addTask(self, task: Task) -> None:
+        self.tasks.append(task)
         
 
     def processNextBatch(self) -> None:
