@@ -44,12 +44,12 @@ class Task:
     def processNextBatch(self, time) -> None:
         # Mangler time management
         if self.hasBatchReadyToProcess() and self.outputBuffer.canAddBatch(self.inputBuffer.getOldestBatchFromBuffer()):
+            print(f"{str(self)} begins processing batch {str(self.inputBuffer.getOldestBatchFromBuffer())}")
             batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer()
             processingTime = batchToProcess.getBatchSize() * self.processingRate
-            print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes')
             newTime = time + processingTime + Task.UNLOADTIME
+            print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes finishing at {newTime}')
             self.eventQueue.createAndQueueEvent(newTime, self.outputBuffer, self.outputBuffer.loadBatchToBuffer, batchToProcess)
-
             self.eventQueue.createAndQueueEvent(newTime, self.unit, self.unit.setIdleToTrue)
         else:
             print('No batches to process')
