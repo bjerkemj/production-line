@@ -36,16 +36,20 @@ class Task:
         return self.outputBuffer
 
     def hasBatchReadyToProcess(self) -> None:
-        return self.inputBuffer.hasBatchReadyToProcess()
+        if self.inputBuffer.hasBatchReadyToProcess():
+            oldestBatch = self.inputBuffer.getOldestBatchFromBuffer()
+            return self.outputBuffer.canAddBatch(oldestBatch)
+        return False
     
     def notifyBufferIsInQueue(self, time: float) -> None:
         self.unit.notifyTaskIsInQueue(time)
 
     def processNextBatch(self, time) -> None:
         # Mangler time management
-        if self.hasBatchReadyToProcess() and self.outputBuffer.canAddBatch(self.inputBuffer.getOldestBatchFromBuffer()):
-            print(f"{str(self)} begins processing batch {str(self.inputBuffer.getOldestBatchFromBuffer())}")
+        if self.hasBatchReadyToProcess():
+            print(f"{str(self)} begins processing batch {str(self.inputBuffer.getOldestBatchFromBuffer())} at time {time}")
             batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer()
+            self.outputBuffer.reserveSpace(batchToProcess.getBatchSize())
             processingTime = batchToProcess.getBatchSize() * self.processingRate
             newTime = time + processingTime + Task.UNLOADTIME
             print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes finishing at {newTime}')

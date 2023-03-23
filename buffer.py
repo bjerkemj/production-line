@@ -16,6 +16,7 @@ class Buffer:
         self.isFirstBuffer = isFirstBuffer
         self.nextTask = None
         self.productionLine = None
+        self.reservedSpace = 0
 
     def setProductionLine(self, productionLine) -> None:
         self.productionLine = productionLine
@@ -37,8 +38,12 @@ class Buffer:
     
     def getNumberOfWafersInBuffer(self) -> int:
         return self.numberOfWafersInBuffer
+    
+    def reserveSpace(self, batchSize: int) -> None:
+        self.reservedSpace += batchSize
 
     def loadBatchToBuffer(self, time: float, batch: Batch) -> None:
+        self.reservedSpace -= batch.getBatchSize()
         if self.canAddBatch(batch):
             self.batches.append(batch)
             print(f'{str(batch)} loaded to {str(self)}')
@@ -55,12 +60,13 @@ class Buffer:
         else:
             print(f'ERROR. Some1 tried to load to a buffer that was full... {str(self)} was attempted loaded to by bacth {str(batch)} at time {time}')
             print(f'{str(batch)} was discarded at {str(self)} at time {time}')
+            raise Exception
             print()
             print()
             print()
 
     def canAddBatch(self, batch: Batch) -> bool:
-        return batch.batchSize + self.numberOfWafersInBuffer <= self.capacity
+        return batch.batchSize + self.numberOfWafersInBuffer + self.reservedSpace <= self.capacity
 
     def updateNumberOfWafersInBuffer(self) -> None:
         self.numberOfWafersInBuffer = sum(
