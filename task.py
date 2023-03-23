@@ -1,18 +1,15 @@
 
 from buffer import Buffer
-from unit import Unit
 
 TASK_PROCESSING_TIME = {'1': .5, '2': 3.5, '3': 1.2, '4': 3, '5': .8, '6': .5, '7': 1, '8': 1.9, '9': .3}
 
 
 class Task:
 
-    def __init__(self, taskNumber: str, inputBuffer: Buffer, outputBuffer: Buffer, unit: Unit) -> None:
+    def __init__(self, taskNumber: str, inputBuffer: Buffer, outputBuffer: Buffer) -> None:
         self.taskNumber = taskNumber
         self.inputBuffer = inputBuffer
         self.outputBuffer = outputBuffer
-        self.unit = unit
-        unit.addTask(self)
         self.processingRate = TASK_PROCESSING_TIME[self.taskNumber]
 
     def __repr__(self) -> str:
