@@ -53,6 +53,7 @@ class ProductionLine:
         return actions
 
     def getUnits(self):
+        print(self.units)
         return self.units
     
     def simulate(self) -> None:
