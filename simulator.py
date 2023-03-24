@@ -34,12 +34,20 @@ def main():
     simulator = Simulator(eventQueue)
     simulator.run()
     pl = simulator.productionLine
-    print(pl.buffers[9].getNumberOfWafersInBuffer())
-    print(str(pl.buffers[2]))
-    print(pl.buffers[2].nextTask.unit.idle)
+    # print(pl.buffers[9].getNumberOfWafersInBuffer())
+    # print(str(pl.buffers[2]))
+    # print(pl.buffers[2].nextTask.unit.idle)
     # print(simulator.productionLine.buffers[2].getNumberOfWafersInBuffer())
-    print([str(task) for task in simulator.productionLine.buffers[2].nextTask.unit.tasks])
+    # print([str(task) for task in simulator.productionLine.buffers[2].nextTask.unit.tasks])
     print([buffer.getNumberOfWafersInBuffer() for buffer in pl.buffers])
+    print([(str(task), task.processingRate) for task in pl.tasks])
+    # print(pl.buffers[0].reservedSpace)
+    # print(pl.buffers[0].reservedSpace)
+
+    # print(len(pl.eventQueue.oldEvents))
+    # for event in pl.eventQueue.oldEvents:
+        # print(str(event))
+    # print(pl.eventQueue.oldEvents)
 
 
 

@@ -13,6 +13,7 @@ class Task:
         self.inputBuffer = inputBuffer
         self.inputBuffer.setNextTask(self)
         self.outputBuffer = outputBuffer
+        self.outputBuffer.setPrevTask(self)
         self.processingRate = TASK_PROCESSING_TIME[self.taskNumber]
         self.eventQueue = eventQueue
         self.unit = None
@@ -49,12 +50,16 @@ class Task:
         if self.hasBatchReadyToProcess():
             print(f"{str(self)} begins processing batch {str(self.inputBuffer.getOldestBatchFromBuffer())} at time {time}")
             batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer()
+            if self.inputBuffer.getPrevTask():
+                taskToNotify = self.inputBuffer.getPrevTask()
+                taskToNotify.notifyBufferIsInQueue(time)
             self.outputBuffer.reserveSpace(batchToProcess.getBatchSize())
             processingTime = batchToProcess.getBatchSize() * self.processingRate
             newTime = time + processingTime + Task.UNLOADTIME
             print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes finishing at {newTime}')
             self.eventQueue.createAndQueueEvent(newTime, self.outputBuffer, self.outputBuffer.loadBatchToBuffer, batchToProcess)
             self.eventQueue.createAndQueueEvent(newTime, self.unit, self.unit.setIdleToTrue)
+            
         else:
             print('No batches to process')
 

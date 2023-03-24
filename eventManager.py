@@ -16,12 +16,16 @@ class Event:
     def executeEvent(self) -> None:
         self.function(self.time, *self.functionParameters)
 
+    def __repr__(self) -> str:
+        return f'Event at time {self.time} on object {str(self.object)} is function {self.function.__name__} with args {self.functionParameters}'
+
 
 
 class EventQueue:
     def __init__(self) -> None:
         self.time = 0
         self.eventset = []
+        self.oldEvents = []
 
     def queueEvent(self, event: Event) -> None:
         if self.isEmpty():
@@ -52,6 +56,7 @@ class EventQueue:
                 print('Some error must have occured since an event in queue is back in time')
             else:
                 event = self.eventset.pop(0)
+                self.oldEvents.append(event)
                 self.time = event.time
                 event.executeEvent()
         else:

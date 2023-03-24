@@ -33,7 +33,12 @@ class ProductionLine:
 
     def loadBatchToProductionLine(self, time:float, batch: Batch) -> None:
         if self.buffers[0].canAddBatch(batch):
+            self.buffers[0].reserveSpace(batch.getBatchSize())
             self.buffers[0].loadBatchToBuffer(time, batch)
+        else:
+            print("Couldn't load batch, trying again at time", time + 50)
+            self.eventQueue.createAndQueueEvent(time + 50, self, self.loadBatchToProductionLine, batch)
+
 
     
 if __name__ == '__main__':

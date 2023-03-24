@@ -15,6 +15,7 @@ class Buffer:
         self.isFinalBuffer = isFinalBuffer
         self.isFirstBuffer = isFirstBuffer
         self.nextTask = None
+        self.prevTask = None
         self.productionLine = None
         self.reservedSpace = 0
 
@@ -26,6 +27,15 @@ class Buffer:
     
     def setNextTask(self, task) -> None:
         self.nextTask = task
+
+    def getNextTask(self):
+        return self.nextTask
+
+    def setPrevTask(self, task) -> None:
+        self.prevTask = task
+
+    def getPrevTask(self):
+        return self.prevTask
 
     def getBatches(self) -> List[Batch]:
         return self.batches
@@ -80,6 +90,8 @@ class Buffer:
             print(f'{str(self.batches[0])} unloaded from {str(self)}')
             print(f'{str(self)} now contains {self.numberOfWafersInBuffer} wafers')
             return self.batches.pop(0)
+        else: 
+            print('HERE IS THE ERROR@@@@@@@@@@@@@@@@@')
         
     def getOldestBatchFromBuffer(self) -> Batch:
         return self.batches[0]

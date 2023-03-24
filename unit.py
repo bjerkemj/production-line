@@ -20,10 +20,10 @@ class Unit:
 
     def notifyTaskIsInQueue(self, time) -> None:
          if self.idle:
-             self.idle = False
              self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
 
     def setIdleToTrue(self, time) -> None:
+        print(f'{str(self)} is set idle to true at {time}')
         self.idle = True
         self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
 
@@ -33,8 +33,10 @@ class Unit:
             print(str(self), 'is processing a batch at time', time)
             for task in self.tasks:
                 if task.hasBatchReadyToProcess():
+                    self.idle = False
                     task.processNextBatch(time)
                     return
+            raise Exception
         else:
             print(str(self), 'has no batches to process at time', time)
 
