@@ -37,7 +37,17 @@ class EventQueue:
     def getEventPriorityIndex(self, event: Event) -> int:
         for idx, eventTime in enumerate([event.time for event in self.eventset]):
             if event.time <= eventTime:
-                return idx
+                counter = 0
+                if event.time == eventTime:
+                    while event.time == eventTime:
+                        counter +=1
+                        # print()
+                        # print(f'The length: {len(self.eventset)}. Our counter: {idx + counter}')
+                        if idx + counter < len(self.eventset):
+                            eventTime = self.eventset[idx + counter].time
+                        else:
+                            return len(self.eventset)
+                return idx + counter
         return len(self.eventset)
 
     def isEmpty(self) -> bool:

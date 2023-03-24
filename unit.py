@@ -29,14 +29,17 @@ class Unit:
 
 
     def processNextBatch(self, time) -> None:
-        if any([task.hasBatchReadyToProcess() for task in self.tasks]):
-            print(str(self), 'is processing a batch at time', time)
-            for task in self.tasks:
-                if task.hasBatchReadyToProcess():
-                    self.idle = False
-                    task.processNextBatch(time)
-                    return
-            raise Exception
+        if self.idle:
+            if any([task.hasBatchReadyToProcess() for task in self.tasks]):
+                print(str(self), 'is processing a batch at time', time)
+                for task in self.tasks:
+                    if task.hasBatchReadyToProcess():
+                        self.idle = False
+                        task.processNextBatch(time)
+                        return
+                raise Exception
+            else:
+                print(str(self), 'has no batches to process at time', time)
         else:
-            print(str(self), 'has no batches to process at time', time)
+            print("balle")
 
