@@ -12,14 +12,21 @@ class Simulator:
         batches = [batch]
         
         actions = []
-        standByUnits = [self.p.getUnits()]
+        standByUnits = self.p.getUnits()
         busyUnits = []
         
         while True:
             if len(batches):
                 actions.append(self.p.loadBatches)
             for unit in standByUnits:
-                unit.
+                action = unit.getPossibleAction()
+                if action:
+                    actions.append(action)
+            
+            print(len(actions))
+
+            break
+                    
 
 
     
@@ -28,7 +35,8 @@ if __name__ == "__main__":
     s = Simulator()
     print(s.p.getTasks())
 
-    unit1priority = [1,3,6,9]
-    unit2priority = [2,5,7]
-    unit1priority = [4,8]
+    s.simulateOneBatch()
+    # unit1priority = [1,3,6,9]
+    # unit2priority = [2,5,7]
+    # unit1priority = [4,8]
 

@@ -20,6 +20,9 @@ class Task:
     def __repr__(self) -> str:
         return f'Task {self.taskNumber}. Max input {self.getInputBuffer().capacity}. Max output {self.getOutputBuffer().capacity}'
     
+    def getTaskNumber(self) -> int:
+        return self.taskNumber
+    
     def setInputBuffer(self, inputBuffer: Buffer) -> None:
         self.inputBuffer = inputBuffer
 

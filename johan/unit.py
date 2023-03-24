@@ -3,14 +3,18 @@ from task import Task
 
 class Unit:
 
-    def __init__(self, unitNumber: str, tasks: List[Task], unitPriority: List[int]) -> None:
+    def __init__(self, unitNumber: str, tasks: List[Task], taskPriority: List[int]) -> None:
         self.unitNumber = unitNumber
         self.tasks = tasks
-        self.unitPriority = unitPriority
+        self.taskPriority = taskPriority
 
     def __repr__(self) -> str:
         return f'Unit {self.unitNumber}'
-
+    
+    def getTask(self, i: int):
+        for task in self.tasks:
+            if int(task.getTaskNumber()) == i:
+                return task
 
     def processNextBatch(self) -> None:
         if any([task.hasBatchReadyToProcess() for task in self.tasks]):
@@ -22,9 +26,9 @@ class Unit:
         else:
             print(str(self), 'has no batches to process.')
         
-    def getPossibleAction(self) -> List:
-        actions = []
-        for task in self.tasks:
+    def getPossibleAction(self):
+        for i in self.taskPriority:
+            task = self.getTask(i)
             if task.hasPossibleAction():
-                actions.append(task.getPossibleAction())
-        return actions
+                return task.getPossibleAction()
+        return None
