@@ -1,4 +1,6 @@
 
+# TODO: Fikse at å loade fra en batch til en task tar 1 min.
+
 Lager en mappe som jeg kaller dokumentasjon hvor vi lagrer dokumentasjon, plots etc. forløpende siden vi skal tracke og begrunne valg vi gjør underveis.
 
 Se DES_COMPONENTS 1 og 2:

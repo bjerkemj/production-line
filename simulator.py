@@ -1,6 +1,7 @@
 from eventManager import EventQueue
 from batch import batchGenerator
 from productionLine import ProductionLine
+import logging
 # An event is on the form (time, object, function, paramtersOfFunction)
 
 
@@ -10,11 +11,10 @@ class Simulator:
     def __init__(self, eventQueue: EventQueue) -> None:
         self.eventQueue = eventQueue
         self.productionLine = ProductionLine(eventQueue)
-        time = 0.0
         starterBatchGenerator = batchGenerator()
         for i in range(50):
             starterBatch = next(starterBatchGenerator)
-            self.eventQueue.createAndQueueEvent(time + 20*i, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
+            self.eventQueue.createAndQueueEvent(100*i, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
 
     def run(self) -> None:
@@ -46,7 +46,7 @@ def main():
 
     # print(len(pl.eventQueue.oldEvents))
     # for event in pl.eventQueue.oldEvents:
-        # print(str(event))
+    #     print(str(event))
     # print(pl.eventQueue.oldEvents)
 
 

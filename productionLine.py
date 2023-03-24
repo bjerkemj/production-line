@@ -37,7 +37,7 @@ class ProductionLine:
             self.buffers[0].loadBatchToBuffer(time, batch)
         else:
             print("Couldn't load batch, trying again at time", time + 50)
-            self.eventQueue.createAndQueueEvent(time + 50, self, self.loadBatchToProductionLine, batch)
+            self.eventQueue.createAndQueueEvent(time + 1, self, self.loadBatchToProductionLine, batch)
 
 
     

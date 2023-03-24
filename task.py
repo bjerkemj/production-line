@@ -49,7 +49,7 @@ class Task:
         # Mangler time management
         if self.hasBatchReadyToProcess():
             print(f"{str(self)} begins processing batch {str(self.inputBuffer.getOldestBatchFromBuffer())} at time {time}")
-            batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer()
+            batchToProcess = self.inputBuffer.unloadOldestBatchFromBuffer(time)
             if self.inputBuffer.getPrevTask():
                 taskToNotify = self.inputBuffer.getPrevTask()
                 taskToNotify.notifyBufferIsInQueue(time)

@@ -56,7 +56,7 @@ class Buffer:
         self.reservedSpace -= batch.getBatchSize()
         if self.canAddBatch(batch):
             self.batches.append(batch)
-            print(f'{str(batch)} loaded to {str(self)}')
+            print(f'{str(batch)} loaded to {str(self)} at time {time}')
             self.updateNumberOfWafersInBuffer()
             if self.isFinalBuffer:
                 print(f'Finished processing batch {str(batch)}. It is now in the final buffer at time {time}. Total number of wafers produced: {self.numberOfWafersInBuffer}')
@@ -83,14 +83,15 @@ class Buffer:
             [batch.getBatchSize() for batch in self.batches]
         )
 
-    def unloadOldestBatchFromBuffer(self) -> Batch:
+    def unloadOldestBatchFromBuffer(self, time) -> Batch:
         """ Needs time management. Returns the batch first added to the buffer (FIFO). Should be changed later. """
         if self.hasBatchReadyToProcess():
             self.numberOfWafersInBuffer = self.numberOfWafersInBuffer - self.batches[0].getBatchSize()
-            print(f'{str(self.batches[0])} unloaded from {str(self)}')
-            print(f'{str(self)} now contains {self.numberOfWafersInBuffer} wafers')
+            print(f'{str(self.batches[0])} unloaded from {str(self)} at time {time}')
+            print(f'{str(self)} now contains {self.numberOfWafersInBuffer} wafers at time {time}')
             return self.batches.pop(0)
         else: 
+            raise Exception
             print('HERE IS THE ERROR@@@@@@@@@@@@@@@@@')
         
     def getOldestBatchFromBuffer(self) -> Batch:
