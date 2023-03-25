@@ -55,7 +55,7 @@ class Task:
                 taskToNotify.notifyBufferIsInQueue(time)
             self.outputBuffer.reserveSpace(batchToProcess.getBatchSize())
             processingTime = batchToProcess.getBatchSize() * self.processingRate
-            newTime = time + processingTime + Task.UNLOADTIME
+            newTime = time + processingTime + Task.UNLOADTIME*2
             print(f'{str(batchToProcess)} processed in {str(self)} and took {processingTime} minutes finishing at {newTime}')
             self.eventQueue.createAndQueueEvent(newTime, self.outputBuffer, self.outputBuffer.loadBatchToBuffer, batchToProcess)
             self.eventQueue.createAndQueueEvent(newTime, self.unit, self.unit.setIdleToTrue)

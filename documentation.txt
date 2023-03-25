@@ -1,5 +1,5 @@
 
-# TODO: Fikse at å loade fra en batch til en task tar 1 min.
+# TODO: Fikse at å loade fra en batch til en task tar 1 min ( nå sier vi bare at en task tar 2 min ekstra med loading)
 
 Lager en mappe som jeg kaller dokumentasjon hvor vi lagrer dokumentasjon, plots etc. forløpende siden vi skal tracke og begrunne valg vi gjør underveis.
 

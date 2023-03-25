@@ -41,5 +41,5 @@ class Unit:
             else:
                 print(str(self), 'has no batches to process at time', time)
         else:
-            print("balle")
+            print(str(self) + ' is not idle. Cannot process at current time.')
 

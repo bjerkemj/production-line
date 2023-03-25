@@ -15,7 +15,7 @@ class ProductionLine:
     def __init__(self, eventQueue: EventQueue) -> None:
         self.buffers = []
         self.tasks = []
-        self.buffers.append(Buffer('0', eventQueue, isFirstBuffer=True))
+        self.buffers.append(Buffer('0', eventQueue, isFirstBuffer=True, capacity=math.inf))
         for i in range(1, 10):
             idNumber = str(i)
             self.buffers.append(Buffer(idNumber, eventQueue))
