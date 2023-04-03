@@ -1,26 +1,27 @@
 import datetime
 import os
 import sys
-import io 
+import io
+from typing import List
+
+from batch import Batch 
 from eventManager import EventQueue
 from batch import batchGenerator
 from productionLine import ProductionLine
-import logging
-import time
-# An event is on the form (time, object, function, paramtersOfFunction)
-
-
 
 class Simulator:
 
-    def __init__(self, eventQueue: EventQueue) -> None:
+    def __init__(self, eventQueue: EventQueue, preLoadedBactches = []) -> None:
         self.eventQueue = eventQueue
         self.productionLine = ProductionLine(eventQueue)
-        starterBatchGenerator = batchGenerator(50)
-        for i in range(20):
-            starterBatch = next(starterBatchGenerator)
-            self.eventQueue.createAndQueueEvent(i*0, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
-
+        if preLoadedBactches:
+            for batch, time in preLoadedBactches:
+                self.eventQueue.createAndQueueEvent(time, self.productionLine.loadBatchToProductionLine, batch)
+        else:
+            starterBatchGenerator = batchGenerator(50)
+            for i in range(20):
+                starterBatch = next(starterBatchGenerator)
+                self.eventQueue.createAndQueueEvent(i*0, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
     def run(self) -> None:
         counter = 0
@@ -30,6 +31,7 @@ class Simulator:
         
         print('Number of events executed:', counter)
         self.finishTime = self.eventQueue.oldEvents[-1].time
+        print('The simulation ended at time', self.finishTime)
 
     def printStatistics(self, comment: str = '')  -> None:
         print('Comment:', comment)
@@ -42,10 +44,6 @@ class Simulator:
 
 
 
-
-
-
-
 def main():
     eventQueue = EventQueue()
     simulator = Simulator(eventQueue)
@@ -55,7 +53,7 @@ def main():
     pl = simulator.productionLine
     simulator.printStatistics()
     sys.stdout = old_stdout
-    
+
     log = buffer.getvalue()
 
     ROOT = os.path.dirname(os.path.abspath(__file__))

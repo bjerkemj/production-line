@@ -1,23 +1,46 @@
 
 # TODO: Fikse at å loade fra en batch til en task tar 1 min ( nå sier vi bare at en task tar 2 min ekstra med loading)
 
-Lager en mappe som jeg kaller dokumentasjon hvor vi lagrer dokumentasjon, plots etc. forløpende siden vi skal tracke og begrunne valg vi gjør underveis.
+SOFTWARE ARCHITECTURE:
 
-Se DES_COMPONENTS 1 og 2:
+A class is created for each object type and is found in the corresponding .py file. As an example, the Buffer class is found in buffer.py. 
 
-Entities: batches
+PRODUCTION LINE CLASSES:
+-Batch (in batch.py):
+    Has a size and an id number. Batch objects are sent around in the production line, but this class is not "awere" of this.
 
-Generators: load batches into production line? Only generator?
+    There is also a generator function in this file that generates new batches while numbering them. This is useful for printing out what batches are being processed where in the prodction line at a given time.
 
-Inter-arrival times: Ved både buffers og tasks?
+-Buffer (in buffers.py):
+    Has a capacity, id number, and some identification of special buffers (first buffer or last buffer). The primary functionality of the buffer is that you can reserve space, load a batch to the buffer and unload a batch from the buffer. The buffer manages a list of batches that are in the buffer at any time. 
 
-Activites/servers: unloading batch from buffer to task. Loading batch from task to buffer. Perform task on batch.
+-Task (in task.py):
+    Has a tasknumber and input- and outputbuffers to know where to load batches from and where to load batches to. The most import functionaly of the task is process a new batch. By processing a new batch, we mean to unload a batch from the inputbuffer, calculate the time it takes to process the batch, then load the batch to the outputbuffer after the time it took to process the batch has elapsed.
 
-Activity/server time: Tiden det tar for å unloade batch from buffer to task, load batch from task to buffer and perform task on batch.
+-Unit (in unit.py):
+    Has a unitnumber and a list of tasks that is part of the unit. It also has an import variable idle which is a boolean saying whether the unit is idle (and therefore may process a new batch in one of its tasks) or if it is not idle (meaning that one of its tasks is currently processing a batch). The most important function is to process a new batch, which starts the processing of a batch in one of its tasks if it has a batch available.
 
-Resources: Det er units (tenk at en operator må utføre en task, og det er kun én operator per unit, eller at alle tasks i en unit bruker samme maskin, så flere tasks på samme maskin funker ikke)
+-ProductionLine (in productionLine.py):
+    Is a class that connects the different parts of the productionline together. All it does is create instances of batches, buffers, tasks, and units according to the description of the productionline. The only other functionality it has is to load a batch to the productionline by adding an input batch to the first buffer.
 
-Queues: Rett før unit/task
+Discrete event simulation:
+We have chosen to implement a discrete event simulation (DES). The simulator is managed through an eventmanager that manages events, and a simulation that engages the event loop until the simulation is finished. All the above classes from the production line (except for the batch class), takes as input an EventManager instance as well as a time (float) such that events are triggered at correct times and triggered events cause new events to be added to the simulation.
 
-Sinks: Kun den siste bufferNumber
+SIMULATOR CLASSES:
+
+-Event (in eventManager.py):
+    An Event has a time it should be executed at, a object which the event will happen on, a function which is the what should be triggered when the event is executed and some potential arguments for the event. An event has but one important and that is executeEvent which simply calls that event's function at that event's time-
+
+-EventQueue (in eventManager.py):
+    The EventQueue manages a list of events (a queue), always sorted by lowest simulation time to highest. The eventQueue is passed around in the productionLine, such that every time something happens in the productionline that should cause a new event to happen, the new event is added to the EventQueue. For instance, if a batch of size 20 is begun processed in task 1 at time 10.0, a new event is created in the task telling the eventqueue to load that batch to buffer 1 at time 20.0 (10.0 + 0.5*20 + 1 for loading). To deal with things happening at the same time, events that happen at the time time will be executed in the same order in which they were added to the eventqueue. 
+
+-Simulator (in simulator.py):
+    This class simply initiates a prodctionline with an eventQueue, adds the creation of new batches to the eventqueue and then runs the eventqueue until the simulation is finished. In the simulator, we can manage the way the wafers are grouped into batches, the times at which batches are loaded to the input buffer of the production line, and we can also print statistics and results from the simulation to terminal or to file. 
+
+
+
+Task 1 and 2 can be seen in the PRODUCTION LINE CLASSES above. Task 3 and 4 can be seen in the SIMULATOR CLASSES above. The results of task 4 can be read from different textfiles in the solutions folder (one batch, five batches and twenty batches of size 50). Results from different simulations can be seen in the textfiles in the simulationsfolder, which are named by date.
+
+To visualize the result of a simulation, we have created a simple plotting script, 'plotter.py', which plots the result of a simulation by reading the simulation textfile.
+
 
