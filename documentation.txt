@@ -14,6 +14,10 @@ PRODUCTION LINE CLASSES:
 -Buffer (in buffers.py):
     Has a capacity, id number, and some identification of special buffers (first buffer or last buffer). The primary functionality of the buffer is that you can reserve space, load a batch to the buffer and unload a batch from the buffer. The buffer manages a list of batches that are in the buffer at any time. 
 
+    The first buffer is special because we have set it's capacity to inifinite. The reason for this is that this allows us to flood the system, and rather let the system choose intelligently what to process when. In theory, having all batches in the inital buffer will never be worse then loading batches into the initial buffer at predetermined times, since the system can also be adjusted such that the batches in the inputbuffer are also processed at predetermined times.
+
+    
+
 -Task (in task.py):
     Has a tasknumber and input- and outputbuffers to know where to load batches from and where to load batches to. The most import functionaly of the task is process a new batch. By processing a new batch, we mean to unload a batch from the inputbuffer, calculate the time it takes to process the batch, then load the batch to the outputbuffer after the time it took to process the batch has elapsed.
 
