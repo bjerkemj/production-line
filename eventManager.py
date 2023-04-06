@@ -1,12 +1,9 @@
 class TestObject:
-
     def fun(self, time, param1, param2):
         print('time is', time)
         print(param1, param2)
 
-
 class Event:
-
     def __init__(self, time: float, object: object, function, *args) -> None:
         self.time = time
         self.object = object
@@ -18,8 +15,6 @@ class Event:
 
     def __repr__(self) -> str:
         return f'Event at time {self.time} on object {str(self.object)} is function {self.function.__name__} with args {self.functionParameters}'
-
-
 
 class EventQueue:
     def __init__(self) -> None:

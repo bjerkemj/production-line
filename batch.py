@@ -15,11 +15,11 @@ class Batch:
     def getBatchNumber(self) -> str:
         return self.batchNumber
     
-    def getLocation(self):
+    def getLocation(self) -> str:
         # Maybe location should be a buffer or a task/unit? Not sure
         return self.location
     
-    def setLocation(self, location) -> str:
+    def setLocation(self, location) -> None:
         self.location = location
 
 def batchGenerator(batchSize: int = 20) -> Batch:

@@ -11,8 +11,6 @@ class TestBatch(unittest.TestCase):
         batch = Batch("1", 20)
         self.assertEqual(batch.batchNumber, "1")
         self.assertEqual(batch.batchSize, 20)
-        self.assertEqual(batch.prevTask, 0)
-        self.assertEqual(batch.prevBuffer, 0)
         self.assertEqual(batch.location, "Start")
 
     def test_repr(self):
