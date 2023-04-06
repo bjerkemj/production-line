@@ -1,8 +1,4 @@
-
-
-
 class Batch:
-
     def __init__(self, batchNumber: str, batchSize: int) -> None:
         self.batchNumber = batchNumber
         self.batchSize = batchSize
@@ -26,11 +22,8 @@ class Batch:
     def setLocation(self, location) -> str:
         self.location = location
 
-
-
 def batchGenerator(batchSize: int = 20) -> Batch:
     batchNumber = 1
     while True:
-        
-        yield Batch(batchNumber, batchSize)
+        yield Batch(str(batchNumber), batchSize)
         batchNumber += 1
