@@ -1,7 +1,6 @@
 from typing import List
 from eventManager import EventQueue
 from batch import Batch
-from batch import batchGenerator
 
 BUFFER_LOAD_TIME = 1 # minute
 
@@ -99,9 +98,3 @@ class Buffer:
         
     def hasBatchReadyToProcess(self) -> bool:
         return len(self.batches) > 0
-    
-
-        
-        
-    
-
