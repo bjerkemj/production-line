@@ -18,12 +18,16 @@ class TestBatch(unittest.TestCase):
         self.assertEqual(repr(batch), "Batch 1 of size 20")
 
     def test_getBatchSize(self):
-        batch = Batch("1", 20)
-        self.assertEqual(batch.getBatchSize(), 20)
+        batch1 = Batch("1", 20)
+        self.assertEqual(batch1.getBatchSize(), 20)
+        batch2 = Batch("2", 50)
+        self.assertEqual(batch2.getBatchSize(), 50)
 
     def test_getBatchNumber(self):
-        batch = Batch("1", 20)
-        self.assertEqual(batch.getBatchNumber(), "1")
+        batch1 = Batch("1", 20)
+        self.assertEqual(batch1.getBatchNumber(), "1")
+        batch2 = Batch("2", 52)
+        self.assertEqual(batch2.getBatchNumber(), "2")
 
     def test_getLocation(self):
         batch = Batch("1", 20)
@@ -32,11 +36,11 @@ class TestBatch(unittest.TestCase):
     def test_setLocation(self):
         batch = Batch("1", 20)
         batch.setLocation("Processing")
-        self.assertEqual(batch.getLocation(), "Processing")
+        self.assertEqual(batch.location, "Processing")
 
 class TestBatchGenerator(unittest.TestCase):
 
-    def test_batchGenerator(self):
+    def test_batchGenerator_standard_size(self):
         generator = batchGenerator()
         first_batch = next(generator)
         second_batch = next(generator)
@@ -47,6 +51,18 @@ class TestBatchGenerator(unittest.TestCase):
         self.assertEqual(first_batch.getBatchSize(), 20)
         self.assertEqual(second_batch.getBatchNumber(), "2")
         self.assertEqual(second_batch.getBatchSize(), 20)
+
+    def test_batchGenerator_unique_size(self):
+        generator = batchGenerator(50)
+        first_batch = next(generator)
+        second_batch = next(generator)
+
+        self.assertIsInstance(first_batch, Batch)
+        self.assertIsInstance(second_batch, Batch)
+        self.assertEqual(first_batch.getBatchNumber(), "1")
+        self.assertEqual(first_batch.getBatchSize(), 50)
+        self.assertEqual(second_batch.getBatchNumber(), "2")
+        self.assertEqual(second_batch.getBatchSize(), 50)
 
 if __name__ == "__main__":
     unittest.main()
