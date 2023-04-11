@@ -3,7 +3,6 @@ from task import Task
 from eventManager import EventQueue
 
 class Unit:
-
     def __init__(self, unitNumber: str, eventQueue = EventQueue, tasks: List[Task] = []) -> None:
         self.unitNumber = unitNumber
         self.eventQueue = eventQueue
@@ -26,7 +25,6 @@ class Unit:
         print(f'{str(self)} is set idle to true at {time}')
         self.idle = True
         self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
-
 
     def processNextBatch(self, time) -> None:
         if self.idle:
