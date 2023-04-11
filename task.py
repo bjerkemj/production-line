@@ -3,11 +3,10 @@ from eventManager import EventQueue
 
 TASK_PROCESSING_TIME = {'1': .5, '2': 3.5, '3': 1.2, '4': 3, '5': .8, '6': .5, '7': 1, '8': 1.9, '9': .3}
 
-
 class Task:
     UNLOADTIME = 1
 
-    def __init__(self, taskNumber: str, inputBuffer: Buffer, outputBuffer: Buffer, eventQueue: EventQueue, isAvailable = True) -> None:
+    def __init__(self, taskNumber: str, inputBuffer: Buffer, outputBuffer: Buffer, eventQueue: EventQueue) -> None:
         self.taskNumber = taskNumber
         self.inputBuffer = inputBuffer
         self.inputBuffer.setNextTask(self)
@@ -17,11 +16,11 @@ class Task:
         self.eventQueue = eventQueue
         self.unit = None
 
-    def setUnit(self, unit) -> None:
-        self.unit = unit
-
     def __repr__(self) -> str:
         return f'Task {self.taskNumber}'
+    
+    def setUnit(self, unit) -> None:
+        self.unit = unit
     
     def setInputBuffer(self, inputBuffer: Buffer) -> None:
         self.inputBuffer = inputBuffer
@@ -62,5 +61,4 @@ class Task:
         else:
             print('No batches to process')
 
-    
         
