@@ -48,4 +48,4 @@ Task 1 and 2 can be seen in the PRODUCTION LINE CLASSES above. Task 3 and 4 can 
 To visualize the result of a simulation, we have created a simple plotting script, 'plotter.py', which plots the result of a simulation by reading the simulation textfile.
 
 -Testing:
-    In this assignment we have taken our testing to the next level . We have started using the package 'unittest', which is a part of the Python standard library. This means our testing follows a 'best practice' of writing tests. We have also started using mocks, setUp and tearDown for making our tests class independent and easier to read.
+    In this assignment we have taken our testing to the next level. We have started using the package 'unittest', which is a part of the Python standard library. This means our testing follows a 'best practice' of writing tests. We have also started using mocks, setUp and tearDown for making our test classes independent and easier to read.
