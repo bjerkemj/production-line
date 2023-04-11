@@ -5,9 +5,7 @@ from task import Task
 from unit import Unit
 from eventManager import EventQueue
 
-
 class ProductionLine:
-
     unit1TaskNumbers = ['1', '3', '6', '9']
     unit2TaskNumbers = ['2', '5', '7']
     unit3TaskNumbers = ['4', '8']
@@ -29,8 +27,6 @@ class ProductionLine:
         self.units = [unit1, unit2, unit3]
         self.eventQueue = eventQueue
 
-    
-
     def loadBatchToProductionLine(self, time:float, batch: Batch) -> None:
         if self.buffers[0].canAddBatch(batch):
             self.buffers[0].reserveSpace(batch.getBatchSize())
@@ -39,8 +35,6 @@ class ProductionLine:
             print("Couldn't load batch, trying again at time", time + 50)
             self.eventQueue.createAndQueueEvent(time + 1, self, self.loadBatchToProductionLine, batch)
 
-
-    
 if __name__ == '__main__':
     pl = ProductionLine()
     batch = Batch('1', 20)
