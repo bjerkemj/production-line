@@ -35,6 +35,7 @@ def createSinglePlotFromFilesInFolder(folderName: str, save: bool = True):
 
 
 def getCommentAndDictionaryFromSimulation(filepath: str):
+    print(filepath)
     with open(filepath, 'r') as file:
         lines = file.readlines()
         lines = [line.replace('\n', '') for line in lines]

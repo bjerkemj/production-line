@@ -4,6 +4,7 @@ from buffer import Buffer
 from task import Task
 from unit import Unit
 from eventManager import EventQueue
+import itertools
 
 class ProductionLine:
     unit1TaskNumbers = ['1', '3', '6', '9']
