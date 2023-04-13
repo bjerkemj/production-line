@@ -7,8 +7,8 @@ from eventManager import EventQueue
 import itertools
 
 class ProductionLine:
-    unit1TaskNumbers = ['1', '3', '6', '9']
-    unit2TaskNumbers = ['2', '5', '7']
+    unit1TaskNumbers = ['1', '3', '9', '6']
+    unit2TaskNumbers = ['5', '7', '2']
     unit3TaskNumbers = ['4', '8']
 
     def __init__(self, eventQueue: EventQueue) -> None:
@@ -25,6 +25,10 @@ class ProductionLine:
         unit1 = Unit('1', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit1TaskNumbers])
         unit2 = Unit('2', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit2TaskNumbers])
         unit3 = Unit('3', eventQueue, [task for task in self.tasks if task.taskNumber in ProductionLine.unit3TaskNumbers])
+        unit1.setTaskPriority(ProductionLine.unit1TaskNumbers)
+        unit2.setTaskPriority(ProductionLine.unit2TaskNumbers)
+        unit3.setTaskPriority(ProductionLine.unit3TaskNumbers)
+
         self.units = [unit1, unit2, unit3]
         self.eventQueue = eventQueue
 

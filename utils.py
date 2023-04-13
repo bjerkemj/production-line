@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 folderName = 'simulations_plots'
-SAVE_FOLDER = os.path.join(ROOT, 'simulations_orderingHeuristic_plots')
+SAVE_FOLDER = os.path.join(ROOT, 'simulations_batchSize_plots')
 
 def savePlotsFromSimulationsInFolder(folderName: str):
     folderPath = os.path.join(ROOT, folderName)
@@ -67,7 +67,7 @@ def getCommentAndDictionaryFromSimulation(filepath: str):
                 numWafersProduced.append(numWafers)
         return comment, finalStatsDict, finishedBatchTimes, numWafersProduced
     
-def getBestPermutation(folderName):
+def getBestTimes(folderName):
     solutions = []
     folderPath = os.path.join(ROOT, folderName)
     for file_name in os.listdir(folderPath):
@@ -78,14 +78,15 @@ def getBestPermutation(folderName):
             data = lines[-1].strip().split(',')
             solutions.append([data[1], comment, file_name])
     sorted_solutions = sorted(solutions, key=lambda x: float(x[0]))
-    [print(sol[:-1]) for sol in sorted_solutions[:5]]
+    [print(sol[:-1]) for sol in sorted_solutions[:]]
 
 
 def main():
-    folderName = 'simulations_orderingHeuristic'
-    ## savePlotsFromSimulationsInFolder(folderName)
-    #createSinglePlotFromFilesInFolder(folderName)
-    getBestPermutation(folderName)
+    folderName = 'simulations_batchSize'
+    SAVE_FOLDER = os.path.join(ROOT, 'simulations_batchSize_plots')
+    # savePlotsFromSimulationsInFolder(folderName)
+    createSinglePlotFromFilesInFolder(folderName)
+    getBestTimes(folderName)
 
 
 if __name__ == '__main__':
