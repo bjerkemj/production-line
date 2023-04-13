@@ -34,8 +34,6 @@ def createSinglePlotFromFilesInFolder(folderName: str, save: bool = True):
     else:
         plt.show()
 
-
-
 def getCommentAndDictionaryFromSimulation(filepath: str):
     with open(filepath, 'r') as file:
         lines = file.readlines()
@@ -68,11 +66,26 @@ def getCommentAndDictionaryFromSimulation(filepath: str):
                 finishedBatchTimes.append(time)
                 numWafersProduced.append(numWafers)
         return comment, finalStatsDict, finishedBatchTimes, numWafersProduced
+    
+def getBestPermutation(folderName):
+    solutions = []
+    folderPath = os.path.join(ROOT, folderName)
+    for file_name in os.listdir(folderPath):
+        file_path = os.path.join(folderPath, file_name)
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+            comment = lines[-2].strip()[9:]
+            data = lines[-1].strip().split(',')
+            solutions.append([data[1], comment, file_name])
+    sorted_solutions = sorted(solutions, key=lambda x: float(x[0]))
+    print(sorted_solutions[:5])
+
 
 def main():
-    folderName = 'simulations_orderingHeuristic'
-    # savePlotsFromSimulationsInFolder(folderName)
-    createSinglePlotFromFilesInFolder(folderName)
+    folderName = 'optimize_loadtimes_orderingHeuristic'
+    ## savePlotsFromSimulationsInFolder(folderName)
+    #createSinglePlotFromFilesInFolder(folderName)
+    getBestPermutation(folderName)
 
 
 if __name__ == '__main__':
