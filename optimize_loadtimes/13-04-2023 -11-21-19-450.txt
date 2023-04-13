@@ -1,0 +1,1728 @@
+Batch 1 of size 50 loaded to Buffer 0 at time 0
+Buffer 0 now contains 50 wafers at time 0
+Unit 1 is processing a batch at time 0
+Task 1 begins processing batch Batch 1 of size 50 at time 0
+Batch 1 of size 50 unloaded from Buffer 0 at time 0
+Buffer 0 now contains 0 wafers at time 0
+Batch 1 of size 50 processed in Task 1 and took 25.0 minutes finishing at 27.0
+Batch 1 of size 50 loaded to Buffer 1 at time 27.0
+Buffer 1 now contains 50 wafers at time 27.0
+Unit 1 is set idle to true at 27.0
+Unit 2 is processing a batch at time 27.0
+Task 2 begins processing batch Batch 1 of size 50 at time 27.0
+Batch 1 of size 50 unloaded from Buffer 1 at time 27.0
+Buffer 1 now contains 0 wafers at time 27.0
+Batch 1 of size 50 processed in Task 2 and took 175.0 minutes finishing at 204.0
+Unit 1 has no batches to process at time 27.0
+Unit 1 has no batches to process at time 27.0
+Batch 1 of size 50 loaded to Buffer 2 at time 204.0
+Buffer 2 now contains 50 wafers at time 204.0
+Unit 2 is set idle to true at 204.0
+Unit 1 is processing a batch at time 204.0
+Task 3 begins processing batch Batch 1 of size 50 at time 204.0
+Batch 1 of size 50 unloaded from Buffer 2 at time 204.0
+Buffer 2 now contains 0 wafers at time 204.0
+Batch 1 of size 50 processed in Task 3 and took 60.0 minutes finishing at 266.0
+Unit 2 has no batches to process at time 204.0
+Unit 2 has no batches to process at time 204.0
+Batch 1 of size 50 loaded to Buffer 3 at time 266.0
+Buffer 3 now contains 50 wafers at time 266.0
+Unit 1 is set idle to true at 266.0
+Unit 3 is processing a batch at time 266.0
+Task 4 begins processing batch Batch 1 of size 50 at time 266.0
+Batch 1 of size 50 unloaded from Buffer 3 at time 266.0
+Buffer 3 now contains 0 wafers at time 266.0
+Batch 1 of size 50 processed in Task 4 and took 150 minutes finishing at 418.0
+Unit 1 has no batches to process at time 266.0
+Unit 1 has no batches to process at time 266.0
+Batch 1 of size 50 loaded to Buffer 4 at time 418.0
+Buffer 4 now contains 50 wafers at time 418.0
+Unit 3 is set idle to true at 418.0
+Unit 2 is processing a batch at time 418.0
+Task 5 begins processing batch Batch 1 of size 50 at time 418.0
+Batch 1 of size 50 unloaded from Buffer 4 at time 418.0
+Buffer 4 now contains 0 wafers at time 418.0
+Batch 1 of size 50 processed in Task 5 and took 40.0 minutes finishing at 460.0
+Unit 3 has no batches to process at time 418.0
+Unit 3 has no batches to process at time 418.0
+Batch 2 of size 50 loaded to Buffer 0 at time 450
+Buffer 0 now contains 50 wafers at time 450
+Unit 1 is processing a batch at time 450
+Task 1 begins processing batch Batch 2 of size 50 at time 450
+Batch 2 of size 50 unloaded from Buffer 0 at time 450
+Buffer 0 now contains 0 wafers at time 450
+Batch 2 of size 50 processed in Task 1 and took 25.0 minutes finishing at 477.0
+Batch 1 of size 50 loaded to Buffer 5 at time 460.0
+Buffer 5 now contains 50 wafers at time 460.0
+Unit 2 is set idle to true at 460.0
+Unit 2 has no batches to process at time 460.0
+Batch 2 of size 50 loaded to Buffer 1 at time 477.0
+Buffer 1 now contains 50 wafers at time 477.0
+Unit 1 is set idle to true at 477.0
+Unit 2 is processing a batch at time 477.0
+Task 2 begins processing batch Batch 2 of size 50 at time 477.0
+Batch 2 of size 50 unloaded from Buffer 1 at time 477.0
+Buffer 1 now contains 0 wafers at time 477.0
+Batch 2 of size 50 processed in Task 2 and took 175.0 minutes finishing at 654.0
+Unit 1 is processing a batch at time 477.0
+Task 6 begins processing batch Batch 1 of size 50 at time 477.0
+Batch 1 of size 50 unloaded from Buffer 5 at time 477.0
+Buffer 5 now contains 0 wafers at time 477.0
+Batch 1 of size 50 processed in Task 6 and took 25.0 minutes finishing at 504.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 1 of size 50 loaded to Buffer 6 at time 504.0
+Buffer 6 now contains 50 wafers at time 504.0
+Unit 1 is set idle to true at 504.0
+Unit 1 has no batches to process at time 504.0
+Batch 2 of size 50 loaded to Buffer 2 at time 654.0
+Buffer 2 now contains 50 wafers at time 654.0
+Unit 2 is set idle to true at 654.0
+Unit 1 is processing a batch at time 654.0
+Task 3 begins processing batch Batch 2 of size 50 at time 654.0
+Batch 2 of size 50 unloaded from Buffer 2 at time 654.0
+Buffer 2 now contains 0 wafers at time 654.0
+Batch 2 of size 50 processed in Task 3 and took 60.0 minutes finishing at 716.0
+Unit 2 is processing a batch at time 654.0
+Task 7 begins processing batch Batch 1 of size 50 at time 654.0
+Batch 1 of size 50 unloaded from Buffer 6 at time 654.0
+Buffer 6 now contains 0 wafers at time 654.0
+Batch 1 of size 50 processed in Task 7 and took 50 minutes finishing at 706.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 1 of size 50 loaded to Buffer 7 at time 706.0
+Buffer 7 now contains 50 wafers at time 706.0
+Unit 2 is set idle to true at 706.0
+Unit 3 is processing a batch at time 706.0
+Task 8 begins processing batch Batch 1 of size 50 at time 706.0
+Batch 1 of size 50 unloaded from Buffer 7 at time 706.0
+Buffer 7 now contains 0 wafers at time 706.0
+Batch 1 of size 50 processed in Task 8 and took 95.0 minutes finishing at 803.0
+Unit 2 has no batches to process at time 706.0
+Unit 2 has no batches to process at time 706.0
+Batch 2 of size 50 loaded to Buffer 3 at time 716.0
+Buffer 3 now contains 50 wafers at time 716.0
+Unit 1 is set idle to true at 716.0
+Unit 1 has no batches to process at time 716.0
+Batch 1 of size 50 loaded to Buffer 8 at time 803.0
+Buffer 8 now contains 50 wafers at time 803.0
+Unit 3 is set idle to true at 803.0
+Unit 1 is processing a batch at time 803.0
+Task 9 begins processing batch Batch 1 of size 50 at time 803.0
+Batch 1 of size 50 unloaded from Buffer 8 at time 803.0
+Buffer 8 now contains 0 wafers at time 803.0
+Batch 1 of size 50 processed in Task 9 and took 15.0 minutes finishing at 820.0
+Unit 3 is processing a batch at time 803.0
+Task 4 begins processing batch Batch 2 of size 50 at time 803.0
+Batch 2 of size 50 unloaded from Buffer 3 at time 803.0
+Buffer 3 now contains 0 wafers at time 803.0
+Batch 2 of size 50 processed in Task 4 and took 150 minutes finishing at 955.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 1 of size 50 loaded to Buffer 9 at time 820.0
+Finished processing batch Batch 1 of size 50. It is now in the final buffer at time 820.0. Total number of wafers produced: 50
+Unit 1 is set idle to true at 820.0
+Unit 1 has no batches to process at time 820.0
+Batch 3 of size 50 loaded to Buffer 0 at time 900
+Buffer 0 now contains 50 wafers at time 900
+Unit 1 is processing a batch at time 900
+Task 1 begins processing batch Batch 3 of size 50 at time 900
+Batch 3 of size 50 unloaded from Buffer 0 at time 900
+Buffer 0 now contains 0 wafers at time 900
+Batch 3 of size 50 processed in Task 1 and took 25.0 minutes finishing at 927.0
+Batch 3 of size 50 loaded to Buffer 1 at time 927.0
+Buffer 1 now contains 50 wafers at time 927.0
+Unit 1 is set idle to true at 927.0
+Unit 2 is processing a batch at time 927.0
+Task 2 begins processing batch Batch 3 of size 50 at time 927.0
+Batch 3 of size 50 unloaded from Buffer 1 at time 927.0
+Buffer 1 now contains 0 wafers at time 927.0
+Batch 3 of size 50 processed in Task 2 and took 175.0 minutes finishing at 1104.0
+Unit 1 has no batches to process at time 927.0
+Unit 1 has no batches to process at time 927.0
+Batch 2 of size 50 loaded to Buffer 4 at time 955.0
+Buffer 4 now contains 50 wafers at time 955.0
+Unit 3 is set idle to true at 955.0
+Unit 3 has no batches to process at time 955.0
+Batch 3 of size 50 loaded to Buffer 2 at time 1104.0
+Buffer 2 now contains 50 wafers at time 1104.0
+Unit 2 is set idle to true at 1104.0
+Unit 1 is processing a batch at time 1104.0
+Task 3 begins processing batch Batch 3 of size 50 at time 1104.0
+Batch 3 of size 50 unloaded from Buffer 2 at time 1104.0
+Buffer 2 now contains 0 wafers at time 1104.0
+Batch 3 of size 50 processed in Task 3 and took 60.0 minutes finishing at 1166.0
+Unit 2 is processing a batch at time 1104.0
+Task 5 begins processing batch Batch 2 of size 50 at time 1104.0
+Batch 2 of size 50 unloaded from Buffer 4 at time 1104.0
+Buffer 4 now contains 0 wafers at time 1104.0
+Batch 2 of size 50 processed in Task 5 and took 40.0 minutes finishing at 1146.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 1104.0
+Batch 2 of size 50 loaded to Buffer 5 at time 1146.0
+Buffer 5 now contains 50 wafers at time 1146.0
+Unit 2 is set idle to true at 1146.0
+Unit 2 has no batches to process at time 1146.0
+Batch 3 of size 50 loaded to Buffer 3 at time 1166.0
+Buffer 3 now contains 50 wafers at time 1166.0
+Unit 1 is set idle to true at 1166.0
+Unit 3 is processing a batch at time 1166.0
+Task 4 begins processing batch Batch 3 of size 50 at time 1166.0
+Batch 3 of size 50 unloaded from Buffer 3 at time 1166.0
+Buffer 3 now contains 0 wafers at time 1166.0
+Batch 3 of size 50 processed in Task 4 and took 150 minutes finishing at 1318.0
+Unit 1 is processing a batch at time 1166.0
+Task 6 begins processing batch Batch 2 of size 50 at time 1166.0
+Batch 2 of size 50 unloaded from Buffer 5 at time 1166.0
+Buffer 5 now contains 0 wafers at time 1166.0
+Batch 2 of size 50 processed in Task 6 and took 25.0 minutes finishing at 1193.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 1166.0
+Batch 2 of size 50 loaded to Buffer 6 at time 1193.0
+Buffer 6 now contains 50 wafers at time 1193.0
+Unit 1 is set idle to true at 1193.0
+Unit 2 is processing a batch at time 1193.0
+Task 7 begins processing batch Batch 2 of size 50 at time 1193.0
+Batch 2 of size 50 unloaded from Buffer 6 at time 1193.0
+Buffer 6 now contains 0 wafers at time 1193.0
+Batch 2 of size 50 processed in Task 7 and took 50 minutes finishing at 1245.0
+Unit 1 has no batches to process at time 1193.0
+Unit 1 has no batches to process at time 1193.0
+Batch 2 of size 50 loaded to Buffer 7 at time 1245.0
+Buffer 7 now contains 50 wafers at time 1245.0
+Unit 2 is set idle to true at 1245.0
+Unit 2 has no batches to process at time 1245.0
+Batch 3 of size 50 loaded to Buffer 4 at time 1318.0
+Buffer 4 now contains 50 wafers at time 1318.0
+Unit 3 is set idle to true at 1318.0
+Unit 2 is processing a batch at time 1318.0
+Task 5 begins processing batch Batch 3 of size 50 at time 1318.0
+Batch 3 of size 50 unloaded from Buffer 4 at time 1318.0
+Buffer 4 now contains 0 wafers at time 1318.0
+Batch 3 of size 50 processed in Task 5 and took 40.0 minutes finishing at 1360.0
+Unit 3 is processing a batch at time 1318.0
+Task 8 begins processing batch Batch 2 of size 50 at time 1318.0
+Batch 2 of size 50 unloaded from Buffer 7 at time 1318.0
+Buffer 7 now contains 0 wafers at time 1318.0
+Batch 2 of size 50 processed in Task 8 and took 95.0 minutes finishing at 1415.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 4 of size 50 loaded to Buffer 0 at time 1350
+Buffer 0 now contains 50 wafers at time 1350
+Unit 1 is processing a batch at time 1350
+Task 1 begins processing batch Batch 4 of size 50 at time 1350
+Batch 4 of size 50 unloaded from Buffer 0 at time 1350
+Buffer 0 now contains 0 wafers at time 1350
+Batch 4 of size 50 processed in Task 1 and took 25.0 minutes finishing at 1377.0
+Batch 3 of size 50 loaded to Buffer 5 at time 1360.0
+Buffer 5 now contains 50 wafers at time 1360.0
+Unit 2 is set idle to true at 1360.0
+Unit 2 has no batches to process at time 1360.0
+Batch 4 of size 50 loaded to Buffer 1 at time 1377.0
+Buffer 1 now contains 50 wafers at time 1377.0
+Unit 1 is set idle to true at 1377.0
+Unit 2 is processing a batch at time 1377.0
+Task 2 begins processing batch Batch 4 of size 50 at time 1377.0
+Batch 4 of size 50 unloaded from Buffer 1 at time 1377.0
+Buffer 1 now contains 0 wafers at time 1377.0
+Batch 4 of size 50 processed in Task 2 and took 175.0 minutes finishing at 1554.0
+Unit 1 is processing a batch at time 1377.0
+Task 6 begins processing batch Batch 3 of size 50 at time 1377.0
+Batch 3 of size 50 unloaded from Buffer 5 at time 1377.0
+Buffer 5 now contains 0 wafers at time 1377.0
+Batch 3 of size 50 processed in Task 6 and took 25.0 minutes finishing at 1404.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 3 of size 50 loaded to Buffer 6 at time 1404.0
+Buffer 6 now contains 50 wafers at time 1404.0
+Unit 1 is set idle to true at 1404.0
+Unit 1 has no batches to process at time 1404.0
+Batch 2 of size 50 loaded to Buffer 8 at time 1415.0
+Buffer 8 now contains 50 wafers at time 1415.0
+Unit 3 is set idle to true at 1415.0
+Unit 1 is processing a batch at time 1415.0
+Task 9 begins processing batch Batch 2 of size 50 at time 1415.0
+Batch 2 of size 50 unloaded from Buffer 8 at time 1415.0
+Buffer 8 now contains 0 wafers at time 1415.0
+Batch 2 of size 50 processed in Task 9 and took 15.0 minutes finishing at 1432.0
+Unit 3 has no batches to process at time 1415.0
+Unit 3 has no batches to process at time 1415.0
+Batch 2 of size 50 loaded to Buffer 9 at time 1432.0
+Finished processing batch Batch 2 of size 50. It is now in the final buffer at time 1432.0. Total number of wafers produced: 100
+Unit 1 is set idle to true at 1432.0
+Unit 1 has no batches to process at time 1432.0
+Batch 4 of size 50 loaded to Buffer 2 at time 1554.0
+Buffer 2 now contains 50 wafers at time 1554.0
+Unit 2 is set idle to true at 1554.0
+Unit 1 is processing a batch at time 1554.0
+Task 3 begins processing batch Batch 4 of size 50 at time 1554.0
+Batch 4 of size 50 unloaded from Buffer 2 at time 1554.0
+Buffer 2 now contains 0 wafers at time 1554.0
+Batch 4 of size 50 processed in Task 3 and took 60.0 minutes finishing at 1616.0
+Unit 2 is processing a batch at time 1554.0
+Task 7 begins processing batch Batch 3 of size 50 at time 1554.0
+Batch 3 of size 50 unloaded from Buffer 6 at time 1554.0
+Buffer 6 now contains 0 wafers at time 1554.0
+Batch 3 of size 50 processed in Task 7 and took 50 minutes finishing at 1606.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 3 of size 50 loaded to Buffer 7 at time 1606.0
+Buffer 7 now contains 50 wafers at time 1606.0
+Unit 2 is set idle to true at 1606.0
+Unit 3 is processing a batch at time 1606.0
+Task 8 begins processing batch Batch 3 of size 50 at time 1606.0
+Batch 3 of size 50 unloaded from Buffer 7 at time 1606.0
+Buffer 7 now contains 0 wafers at time 1606.0
+Batch 3 of size 50 processed in Task 8 and took 95.0 minutes finishing at 1703.0
+Unit 2 has no batches to process at time 1606.0
+Unit 2 has no batches to process at time 1606.0
+Batch 4 of size 50 loaded to Buffer 3 at time 1616.0
+Buffer 3 now contains 50 wafers at time 1616.0
+Unit 1 is set idle to true at 1616.0
+Unit 1 has no batches to process at time 1616.0
+Batch 3 of size 50 loaded to Buffer 8 at time 1703.0
+Buffer 8 now contains 50 wafers at time 1703.0
+Unit 3 is set idle to true at 1703.0
+Unit 1 is processing a batch at time 1703.0
+Task 9 begins processing batch Batch 3 of size 50 at time 1703.0
+Batch 3 of size 50 unloaded from Buffer 8 at time 1703.0
+Buffer 8 now contains 0 wafers at time 1703.0
+Batch 3 of size 50 processed in Task 9 and took 15.0 minutes finishing at 1720.0
+Unit 3 is processing a batch at time 1703.0
+Task 4 begins processing batch Batch 4 of size 50 at time 1703.0
+Batch 4 of size 50 unloaded from Buffer 3 at time 1703.0
+Buffer 3 now contains 0 wafers at time 1703.0
+Batch 4 of size 50 processed in Task 4 and took 150 minutes finishing at 1855.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 3 of size 50 loaded to Buffer 9 at time 1720.0
+Finished processing batch Batch 3 of size 50. It is now in the final buffer at time 1720.0. Total number of wafers produced: 150
+Unit 1 is set idle to true at 1720.0
+Unit 1 has no batches to process at time 1720.0
+Batch 5 of size 50 loaded to Buffer 0 at time 1800
+Buffer 0 now contains 50 wafers at time 1800
+Unit 1 is processing a batch at time 1800
+Task 1 begins processing batch Batch 5 of size 50 at time 1800
+Batch 5 of size 50 unloaded from Buffer 0 at time 1800
+Buffer 0 now contains 0 wafers at time 1800
+Batch 5 of size 50 processed in Task 1 and took 25.0 minutes finishing at 1827.0
+Batch 5 of size 50 loaded to Buffer 1 at time 1827.0
+Buffer 1 now contains 50 wafers at time 1827.0
+Unit 1 is set idle to true at 1827.0
+Unit 2 is processing a batch at time 1827.0
+Task 2 begins processing batch Batch 5 of size 50 at time 1827.0
+Batch 5 of size 50 unloaded from Buffer 1 at time 1827.0
+Buffer 1 now contains 0 wafers at time 1827.0
+Batch 5 of size 50 processed in Task 2 and took 175.0 minutes finishing at 2004.0
+Unit 1 has no batches to process at time 1827.0
+Unit 1 has no batches to process at time 1827.0
+Batch 4 of size 50 loaded to Buffer 4 at time 1855.0
+Buffer 4 now contains 50 wafers at time 1855.0
+Unit 3 is set idle to true at 1855.0
+Unit 3 has no batches to process at time 1855.0
+Batch 5 of size 50 loaded to Buffer 2 at time 2004.0
+Buffer 2 now contains 50 wafers at time 2004.0
+Unit 2 is set idle to true at 2004.0
+Unit 1 is processing a batch at time 2004.0
+Task 3 begins processing batch Batch 5 of size 50 at time 2004.0
+Batch 5 of size 50 unloaded from Buffer 2 at time 2004.0
+Buffer 2 now contains 0 wafers at time 2004.0
+Batch 5 of size 50 processed in Task 3 and took 60.0 minutes finishing at 2066.0
+Unit 2 is processing a batch at time 2004.0
+Task 5 begins processing batch Batch 4 of size 50 at time 2004.0
+Batch 4 of size 50 unloaded from Buffer 4 at time 2004.0
+Buffer 4 now contains 0 wafers at time 2004.0
+Batch 4 of size 50 processed in Task 5 and took 40.0 minutes finishing at 2046.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 2004.0
+Batch 4 of size 50 loaded to Buffer 5 at time 2046.0
+Buffer 5 now contains 50 wafers at time 2046.0
+Unit 2 is set idle to true at 2046.0
+Unit 2 has no batches to process at time 2046.0
+Batch 5 of size 50 loaded to Buffer 3 at time 2066.0
+Buffer 3 now contains 50 wafers at time 2066.0
+Unit 1 is set idle to true at 2066.0
+Unit 3 is processing a batch at time 2066.0
+Task 4 begins processing batch Batch 5 of size 50 at time 2066.0
+Batch 5 of size 50 unloaded from Buffer 3 at time 2066.0
+Buffer 3 now contains 0 wafers at time 2066.0
+Batch 5 of size 50 processed in Task 4 and took 150 minutes finishing at 2218.0
+Unit 1 is processing a batch at time 2066.0
+Task 6 begins processing batch Batch 4 of size 50 at time 2066.0
+Batch 4 of size 50 unloaded from Buffer 5 at time 2066.0
+Buffer 5 now contains 0 wafers at time 2066.0
+Batch 4 of size 50 processed in Task 6 and took 25.0 minutes finishing at 2093.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 2066.0
+Batch 4 of size 50 loaded to Buffer 6 at time 2093.0
+Buffer 6 now contains 50 wafers at time 2093.0
+Unit 1 is set idle to true at 2093.0
+Unit 2 is processing a batch at time 2093.0
+Task 7 begins processing batch Batch 4 of size 50 at time 2093.0
+Batch 4 of size 50 unloaded from Buffer 6 at time 2093.0
+Buffer 6 now contains 0 wafers at time 2093.0
+Batch 4 of size 50 processed in Task 7 and took 50 minutes finishing at 2145.0
+Unit 1 has no batches to process at time 2093.0
+Unit 1 has no batches to process at time 2093.0
+Batch 4 of size 50 loaded to Buffer 7 at time 2145.0
+Buffer 7 now contains 50 wafers at time 2145.0
+Unit 2 is set idle to true at 2145.0
+Unit 2 has no batches to process at time 2145.0
+Batch 5 of size 50 loaded to Buffer 4 at time 2218.0
+Buffer 4 now contains 50 wafers at time 2218.0
+Unit 3 is set idle to true at 2218.0
+Unit 2 is processing a batch at time 2218.0
+Task 5 begins processing batch Batch 5 of size 50 at time 2218.0
+Batch 5 of size 50 unloaded from Buffer 4 at time 2218.0
+Buffer 4 now contains 0 wafers at time 2218.0
+Batch 5 of size 50 processed in Task 5 and took 40.0 minutes finishing at 2260.0
+Unit 3 is processing a batch at time 2218.0
+Task 8 begins processing batch Batch 4 of size 50 at time 2218.0
+Batch 4 of size 50 unloaded from Buffer 7 at time 2218.0
+Buffer 7 now contains 0 wafers at time 2218.0
+Batch 4 of size 50 processed in Task 8 and took 95.0 minutes finishing at 2315.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 6 of size 50 loaded to Buffer 0 at time 2250
+Buffer 0 now contains 50 wafers at time 2250
+Unit 1 is processing a batch at time 2250
+Task 1 begins processing batch Batch 6 of size 50 at time 2250
+Batch 6 of size 50 unloaded from Buffer 0 at time 2250
+Buffer 0 now contains 0 wafers at time 2250
+Batch 6 of size 50 processed in Task 1 and took 25.0 minutes finishing at 2277.0
+Batch 5 of size 50 loaded to Buffer 5 at time 2260.0
+Buffer 5 now contains 50 wafers at time 2260.0
+Unit 2 is set idle to true at 2260.0
+Unit 2 has no batches to process at time 2260.0
+Batch 6 of size 50 loaded to Buffer 1 at time 2277.0
+Buffer 1 now contains 50 wafers at time 2277.0
+Unit 1 is set idle to true at 2277.0
+Unit 2 is processing a batch at time 2277.0
+Task 2 begins processing batch Batch 6 of size 50 at time 2277.0
+Batch 6 of size 50 unloaded from Buffer 1 at time 2277.0
+Buffer 1 now contains 0 wafers at time 2277.0
+Batch 6 of size 50 processed in Task 2 and took 175.0 minutes finishing at 2454.0
+Unit 1 is processing a batch at time 2277.0
+Task 6 begins processing batch Batch 5 of size 50 at time 2277.0
+Batch 5 of size 50 unloaded from Buffer 5 at time 2277.0
+Buffer 5 now contains 0 wafers at time 2277.0
+Batch 5 of size 50 processed in Task 6 and took 25.0 minutes finishing at 2304.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 5 of size 50 loaded to Buffer 6 at time 2304.0
+Buffer 6 now contains 50 wafers at time 2304.0
+Unit 1 is set idle to true at 2304.0
+Unit 1 has no batches to process at time 2304.0
+Batch 4 of size 50 loaded to Buffer 8 at time 2315.0
+Buffer 8 now contains 50 wafers at time 2315.0
+Unit 3 is set idle to true at 2315.0
+Unit 1 is processing a batch at time 2315.0
+Task 9 begins processing batch Batch 4 of size 50 at time 2315.0
+Batch 4 of size 50 unloaded from Buffer 8 at time 2315.0
+Buffer 8 now contains 0 wafers at time 2315.0
+Batch 4 of size 50 processed in Task 9 and took 15.0 minutes finishing at 2332.0
+Unit 3 has no batches to process at time 2315.0
+Unit 3 has no batches to process at time 2315.0
+Batch 4 of size 50 loaded to Buffer 9 at time 2332.0
+Finished processing batch Batch 4 of size 50. It is now in the final buffer at time 2332.0. Total number of wafers produced: 200
+Unit 1 is set idle to true at 2332.0
+Unit 1 has no batches to process at time 2332.0
+Batch 6 of size 50 loaded to Buffer 2 at time 2454.0
+Buffer 2 now contains 50 wafers at time 2454.0
+Unit 2 is set idle to true at 2454.0
+Unit 1 is processing a batch at time 2454.0
+Task 3 begins processing batch Batch 6 of size 50 at time 2454.0
+Batch 6 of size 50 unloaded from Buffer 2 at time 2454.0
+Buffer 2 now contains 0 wafers at time 2454.0
+Batch 6 of size 50 processed in Task 3 and took 60.0 minutes finishing at 2516.0
+Unit 2 is processing a batch at time 2454.0
+Task 7 begins processing batch Batch 5 of size 50 at time 2454.0
+Batch 5 of size 50 unloaded from Buffer 6 at time 2454.0
+Buffer 6 now contains 0 wafers at time 2454.0
+Batch 5 of size 50 processed in Task 7 and took 50 minutes finishing at 2506.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 5 of size 50 loaded to Buffer 7 at time 2506.0
+Buffer 7 now contains 50 wafers at time 2506.0
+Unit 2 is set idle to true at 2506.0
+Unit 3 is processing a batch at time 2506.0
+Task 8 begins processing batch Batch 5 of size 50 at time 2506.0
+Batch 5 of size 50 unloaded from Buffer 7 at time 2506.0
+Buffer 7 now contains 0 wafers at time 2506.0
+Batch 5 of size 50 processed in Task 8 and took 95.0 minutes finishing at 2603.0
+Unit 2 has no batches to process at time 2506.0
+Unit 2 has no batches to process at time 2506.0
+Batch 6 of size 50 loaded to Buffer 3 at time 2516.0
+Buffer 3 now contains 50 wafers at time 2516.0
+Unit 1 is set idle to true at 2516.0
+Unit 1 has no batches to process at time 2516.0
+Batch 5 of size 50 loaded to Buffer 8 at time 2603.0
+Buffer 8 now contains 50 wafers at time 2603.0
+Unit 3 is set idle to true at 2603.0
+Unit 1 is processing a batch at time 2603.0
+Task 9 begins processing batch Batch 5 of size 50 at time 2603.0
+Batch 5 of size 50 unloaded from Buffer 8 at time 2603.0
+Buffer 8 now contains 0 wafers at time 2603.0
+Batch 5 of size 50 processed in Task 9 and took 15.0 minutes finishing at 2620.0
+Unit 3 is processing a batch at time 2603.0
+Task 4 begins processing batch Batch 6 of size 50 at time 2603.0
+Batch 6 of size 50 unloaded from Buffer 3 at time 2603.0
+Buffer 3 now contains 0 wafers at time 2603.0
+Batch 6 of size 50 processed in Task 4 and took 150 minutes finishing at 2755.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 5 of size 50 loaded to Buffer 9 at time 2620.0
+Finished processing batch Batch 5 of size 50. It is now in the final buffer at time 2620.0. Total number of wafers produced: 250
+Unit 1 is set idle to true at 2620.0
+Unit 1 has no batches to process at time 2620.0
+Batch 7 of size 50 loaded to Buffer 0 at time 2700
+Buffer 0 now contains 50 wafers at time 2700
+Unit 1 is processing a batch at time 2700
+Task 1 begins processing batch Batch 7 of size 50 at time 2700
+Batch 7 of size 50 unloaded from Buffer 0 at time 2700
+Buffer 0 now contains 0 wafers at time 2700
+Batch 7 of size 50 processed in Task 1 and took 25.0 minutes finishing at 2727.0
+Batch 7 of size 50 loaded to Buffer 1 at time 2727.0
+Buffer 1 now contains 50 wafers at time 2727.0
+Unit 1 is set idle to true at 2727.0
+Unit 2 is processing a batch at time 2727.0
+Task 2 begins processing batch Batch 7 of size 50 at time 2727.0
+Batch 7 of size 50 unloaded from Buffer 1 at time 2727.0
+Buffer 1 now contains 0 wafers at time 2727.0
+Batch 7 of size 50 processed in Task 2 and took 175.0 minutes finishing at 2904.0
+Unit 1 has no batches to process at time 2727.0
+Unit 1 has no batches to process at time 2727.0
+Batch 6 of size 50 loaded to Buffer 4 at time 2755.0
+Buffer 4 now contains 50 wafers at time 2755.0
+Unit 3 is set idle to true at 2755.0
+Unit 3 has no batches to process at time 2755.0
+Batch 7 of size 50 loaded to Buffer 2 at time 2904.0
+Buffer 2 now contains 50 wafers at time 2904.0
+Unit 2 is set idle to true at 2904.0
+Unit 1 is processing a batch at time 2904.0
+Task 3 begins processing batch Batch 7 of size 50 at time 2904.0
+Batch 7 of size 50 unloaded from Buffer 2 at time 2904.0
+Buffer 2 now contains 0 wafers at time 2904.0
+Batch 7 of size 50 processed in Task 3 and took 60.0 minutes finishing at 2966.0
+Unit 2 is processing a batch at time 2904.0
+Task 5 begins processing batch Batch 6 of size 50 at time 2904.0
+Batch 6 of size 50 unloaded from Buffer 4 at time 2904.0
+Buffer 4 now contains 0 wafers at time 2904.0
+Batch 6 of size 50 processed in Task 5 and took 40.0 minutes finishing at 2946.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 2904.0
+Batch 6 of size 50 loaded to Buffer 5 at time 2946.0
+Buffer 5 now contains 50 wafers at time 2946.0
+Unit 2 is set idle to true at 2946.0
+Unit 2 has no batches to process at time 2946.0
+Batch 7 of size 50 loaded to Buffer 3 at time 2966.0
+Buffer 3 now contains 50 wafers at time 2966.0
+Unit 1 is set idle to true at 2966.0
+Unit 3 is processing a batch at time 2966.0
+Task 4 begins processing batch Batch 7 of size 50 at time 2966.0
+Batch 7 of size 50 unloaded from Buffer 3 at time 2966.0
+Buffer 3 now contains 0 wafers at time 2966.0
+Batch 7 of size 50 processed in Task 4 and took 150 minutes finishing at 3118.0
+Unit 1 is processing a batch at time 2966.0
+Task 6 begins processing batch Batch 6 of size 50 at time 2966.0
+Batch 6 of size 50 unloaded from Buffer 5 at time 2966.0
+Buffer 5 now contains 0 wafers at time 2966.0
+Batch 6 of size 50 processed in Task 6 and took 25.0 minutes finishing at 2993.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 2966.0
+Batch 6 of size 50 loaded to Buffer 6 at time 2993.0
+Buffer 6 now contains 50 wafers at time 2993.0
+Unit 1 is set idle to true at 2993.0
+Unit 2 is processing a batch at time 2993.0
+Task 7 begins processing batch Batch 6 of size 50 at time 2993.0
+Batch 6 of size 50 unloaded from Buffer 6 at time 2993.0
+Buffer 6 now contains 0 wafers at time 2993.0
+Batch 6 of size 50 processed in Task 7 and took 50 minutes finishing at 3045.0
+Unit 1 has no batches to process at time 2993.0
+Unit 1 has no batches to process at time 2993.0
+Batch 6 of size 50 loaded to Buffer 7 at time 3045.0
+Buffer 7 now contains 50 wafers at time 3045.0
+Unit 2 is set idle to true at 3045.0
+Unit 2 has no batches to process at time 3045.0
+Batch 7 of size 50 loaded to Buffer 4 at time 3118.0
+Buffer 4 now contains 50 wafers at time 3118.0
+Unit 3 is set idle to true at 3118.0
+Unit 2 is processing a batch at time 3118.0
+Task 5 begins processing batch Batch 7 of size 50 at time 3118.0
+Batch 7 of size 50 unloaded from Buffer 4 at time 3118.0
+Buffer 4 now contains 0 wafers at time 3118.0
+Batch 7 of size 50 processed in Task 5 and took 40.0 minutes finishing at 3160.0
+Unit 3 is processing a batch at time 3118.0
+Task 8 begins processing batch Batch 6 of size 50 at time 3118.0
+Batch 6 of size 50 unloaded from Buffer 7 at time 3118.0
+Buffer 7 now contains 0 wafers at time 3118.0
+Batch 6 of size 50 processed in Task 8 and took 95.0 minutes finishing at 3215.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 8 of size 50 loaded to Buffer 0 at time 3150
+Buffer 0 now contains 50 wafers at time 3150
+Unit 1 is processing a batch at time 3150
+Task 1 begins processing batch Batch 8 of size 50 at time 3150
+Batch 8 of size 50 unloaded from Buffer 0 at time 3150
+Buffer 0 now contains 0 wafers at time 3150
+Batch 8 of size 50 processed in Task 1 and took 25.0 minutes finishing at 3177.0
+Batch 7 of size 50 loaded to Buffer 5 at time 3160.0
+Buffer 5 now contains 50 wafers at time 3160.0
+Unit 2 is set idle to true at 3160.0
+Unit 2 has no batches to process at time 3160.0
+Batch 8 of size 50 loaded to Buffer 1 at time 3177.0
+Buffer 1 now contains 50 wafers at time 3177.0
+Unit 1 is set idle to true at 3177.0
+Unit 2 is processing a batch at time 3177.0
+Task 2 begins processing batch Batch 8 of size 50 at time 3177.0
+Batch 8 of size 50 unloaded from Buffer 1 at time 3177.0
+Buffer 1 now contains 0 wafers at time 3177.0
+Batch 8 of size 50 processed in Task 2 and took 175.0 minutes finishing at 3354.0
+Unit 1 is processing a batch at time 3177.0
+Task 6 begins processing batch Batch 7 of size 50 at time 3177.0
+Batch 7 of size 50 unloaded from Buffer 5 at time 3177.0
+Buffer 5 now contains 0 wafers at time 3177.0
+Batch 7 of size 50 processed in Task 6 and took 25.0 minutes finishing at 3204.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 7 of size 50 loaded to Buffer 6 at time 3204.0
+Buffer 6 now contains 50 wafers at time 3204.0
+Unit 1 is set idle to true at 3204.0
+Unit 1 has no batches to process at time 3204.0
+Batch 6 of size 50 loaded to Buffer 8 at time 3215.0
+Buffer 8 now contains 50 wafers at time 3215.0
+Unit 3 is set idle to true at 3215.0
+Unit 1 is processing a batch at time 3215.0
+Task 9 begins processing batch Batch 6 of size 50 at time 3215.0
+Batch 6 of size 50 unloaded from Buffer 8 at time 3215.0
+Buffer 8 now contains 0 wafers at time 3215.0
+Batch 6 of size 50 processed in Task 9 and took 15.0 minutes finishing at 3232.0
+Unit 3 has no batches to process at time 3215.0
+Unit 3 has no batches to process at time 3215.0
+Batch 6 of size 50 loaded to Buffer 9 at time 3232.0
+Finished processing batch Batch 6 of size 50. It is now in the final buffer at time 3232.0. Total number of wafers produced: 300
+Unit 1 is set idle to true at 3232.0
+Unit 1 has no batches to process at time 3232.0
+Batch 8 of size 50 loaded to Buffer 2 at time 3354.0
+Buffer 2 now contains 50 wafers at time 3354.0
+Unit 2 is set idle to true at 3354.0
+Unit 1 is processing a batch at time 3354.0
+Task 3 begins processing batch Batch 8 of size 50 at time 3354.0
+Batch 8 of size 50 unloaded from Buffer 2 at time 3354.0
+Buffer 2 now contains 0 wafers at time 3354.0
+Batch 8 of size 50 processed in Task 3 and took 60.0 minutes finishing at 3416.0
+Unit 2 is processing a batch at time 3354.0
+Task 7 begins processing batch Batch 7 of size 50 at time 3354.0
+Batch 7 of size 50 unloaded from Buffer 6 at time 3354.0
+Buffer 6 now contains 0 wafers at time 3354.0
+Batch 7 of size 50 processed in Task 7 and took 50 minutes finishing at 3406.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 7 of size 50 loaded to Buffer 7 at time 3406.0
+Buffer 7 now contains 50 wafers at time 3406.0
+Unit 2 is set idle to true at 3406.0
+Unit 3 is processing a batch at time 3406.0
+Task 8 begins processing batch Batch 7 of size 50 at time 3406.0
+Batch 7 of size 50 unloaded from Buffer 7 at time 3406.0
+Buffer 7 now contains 0 wafers at time 3406.0
+Batch 7 of size 50 processed in Task 8 and took 95.0 minutes finishing at 3503.0
+Unit 2 has no batches to process at time 3406.0
+Unit 2 has no batches to process at time 3406.0
+Batch 8 of size 50 loaded to Buffer 3 at time 3416.0
+Buffer 3 now contains 50 wafers at time 3416.0
+Unit 1 is set idle to true at 3416.0
+Unit 1 has no batches to process at time 3416.0
+Batch 7 of size 50 loaded to Buffer 8 at time 3503.0
+Buffer 8 now contains 50 wafers at time 3503.0
+Unit 3 is set idle to true at 3503.0
+Unit 1 is processing a batch at time 3503.0
+Task 9 begins processing batch Batch 7 of size 50 at time 3503.0
+Batch 7 of size 50 unloaded from Buffer 8 at time 3503.0
+Buffer 8 now contains 0 wafers at time 3503.0
+Batch 7 of size 50 processed in Task 9 and took 15.0 minutes finishing at 3520.0
+Unit 3 is processing a batch at time 3503.0
+Task 4 begins processing batch Batch 8 of size 50 at time 3503.0
+Batch 8 of size 50 unloaded from Buffer 3 at time 3503.0
+Buffer 3 now contains 0 wafers at time 3503.0
+Batch 8 of size 50 processed in Task 4 and took 150 minutes finishing at 3655.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 7 of size 50 loaded to Buffer 9 at time 3520.0
+Finished processing batch Batch 7 of size 50. It is now in the final buffer at time 3520.0. Total number of wafers produced: 350
+Unit 1 is set idle to true at 3520.0
+Unit 1 has no batches to process at time 3520.0
+Batch 9 of size 50 loaded to Buffer 0 at time 3600
+Buffer 0 now contains 50 wafers at time 3600
+Unit 1 is processing a batch at time 3600
+Task 1 begins processing batch Batch 9 of size 50 at time 3600
+Batch 9 of size 50 unloaded from Buffer 0 at time 3600
+Buffer 0 now contains 0 wafers at time 3600
+Batch 9 of size 50 processed in Task 1 and took 25.0 minutes finishing at 3627.0
+Batch 9 of size 50 loaded to Buffer 1 at time 3627.0
+Buffer 1 now contains 50 wafers at time 3627.0
+Unit 1 is set idle to true at 3627.0
+Unit 2 is processing a batch at time 3627.0
+Task 2 begins processing batch Batch 9 of size 50 at time 3627.0
+Batch 9 of size 50 unloaded from Buffer 1 at time 3627.0
+Buffer 1 now contains 0 wafers at time 3627.0
+Batch 9 of size 50 processed in Task 2 and took 175.0 minutes finishing at 3804.0
+Unit 1 has no batches to process at time 3627.0
+Unit 1 has no batches to process at time 3627.0
+Batch 8 of size 50 loaded to Buffer 4 at time 3655.0
+Buffer 4 now contains 50 wafers at time 3655.0
+Unit 3 is set idle to true at 3655.0
+Unit 3 has no batches to process at time 3655.0
+Batch 9 of size 50 loaded to Buffer 2 at time 3804.0
+Buffer 2 now contains 50 wafers at time 3804.0
+Unit 2 is set idle to true at 3804.0
+Unit 1 is processing a batch at time 3804.0
+Task 3 begins processing batch Batch 9 of size 50 at time 3804.0
+Batch 9 of size 50 unloaded from Buffer 2 at time 3804.0
+Buffer 2 now contains 0 wafers at time 3804.0
+Batch 9 of size 50 processed in Task 3 and took 60.0 minutes finishing at 3866.0
+Unit 2 is processing a batch at time 3804.0
+Task 5 begins processing batch Batch 8 of size 50 at time 3804.0
+Batch 8 of size 50 unloaded from Buffer 4 at time 3804.0
+Buffer 4 now contains 0 wafers at time 3804.0
+Batch 8 of size 50 processed in Task 5 and took 40.0 minutes finishing at 3846.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 3804.0
+Batch 8 of size 50 loaded to Buffer 5 at time 3846.0
+Buffer 5 now contains 50 wafers at time 3846.0
+Unit 2 is set idle to true at 3846.0
+Unit 2 has no batches to process at time 3846.0
+Batch 9 of size 50 loaded to Buffer 3 at time 3866.0
+Buffer 3 now contains 50 wafers at time 3866.0
+Unit 1 is set idle to true at 3866.0
+Unit 3 is processing a batch at time 3866.0
+Task 4 begins processing batch Batch 9 of size 50 at time 3866.0
+Batch 9 of size 50 unloaded from Buffer 3 at time 3866.0
+Buffer 3 now contains 0 wafers at time 3866.0
+Batch 9 of size 50 processed in Task 4 and took 150 minutes finishing at 4018.0
+Unit 1 is processing a batch at time 3866.0
+Task 6 begins processing batch Batch 8 of size 50 at time 3866.0
+Batch 8 of size 50 unloaded from Buffer 5 at time 3866.0
+Buffer 5 now contains 0 wafers at time 3866.0
+Batch 8 of size 50 processed in Task 6 and took 25.0 minutes finishing at 3893.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 3866.0
+Batch 8 of size 50 loaded to Buffer 6 at time 3893.0
+Buffer 6 now contains 50 wafers at time 3893.0
+Unit 1 is set idle to true at 3893.0
+Unit 2 is processing a batch at time 3893.0
+Task 7 begins processing batch Batch 8 of size 50 at time 3893.0
+Batch 8 of size 50 unloaded from Buffer 6 at time 3893.0
+Buffer 6 now contains 0 wafers at time 3893.0
+Batch 8 of size 50 processed in Task 7 and took 50 minutes finishing at 3945.0
+Unit 1 has no batches to process at time 3893.0
+Unit 1 has no batches to process at time 3893.0
+Batch 8 of size 50 loaded to Buffer 7 at time 3945.0
+Buffer 7 now contains 50 wafers at time 3945.0
+Unit 2 is set idle to true at 3945.0
+Unit 2 has no batches to process at time 3945.0
+Batch 9 of size 50 loaded to Buffer 4 at time 4018.0
+Buffer 4 now contains 50 wafers at time 4018.0
+Unit 3 is set idle to true at 4018.0
+Unit 2 is processing a batch at time 4018.0
+Task 5 begins processing batch Batch 9 of size 50 at time 4018.0
+Batch 9 of size 50 unloaded from Buffer 4 at time 4018.0
+Buffer 4 now contains 0 wafers at time 4018.0
+Batch 9 of size 50 processed in Task 5 and took 40.0 minutes finishing at 4060.0
+Unit 3 is processing a batch at time 4018.0
+Task 8 begins processing batch Batch 8 of size 50 at time 4018.0
+Batch 8 of size 50 unloaded from Buffer 7 at time 4018.0
+Buffer 7 now contains 0 wafers at time 4018.0
+Batch 8 of size 50 processed in Task 8 and took 95.0 minutes finishing at 4115.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 10 of size 50 loaded to Buffer 0 at time 4050
+Buffer 0 now contains 50 wafers at time 4050
+Unit 1 is processing a batch at time 4050
+Task 1 begins processing batch Batch 10 of size 50 at time 4050
+Batch 10 of size 50 unloaded from Buffer 0 at time 4050
+Buffer 0 now contains 0 wafers at time 4050
+Batch 10 of size 50 processed in Task 1 and took 25.0 minutes finishing at 4077.0
+Batch 9 of size 50 loaded to Buffer 5 at time 4060.0
+Buffer 5 now contains 50 wafers at time 4060.0
+Unit 2 is set idle to true at 4060.0
+Unit 2 has no batches to process at time 4060.0
+Batch 10 of size 50 loaded to Buffer 1 at time 4077.0
+Buffer 1 now contains 50 wafers at time 4077.0
+Unit 1 is set idle to true at 4077.0
+Unit 2 is processing a batch at time 4077.0
+Task 2 begins processing batch Batch 10 of size 50 at time 4077.0
+Batch 10 of size 50 unloaded from Buffer 1 at time 4077.0
+Buffer 1 now contains 0 wafers at time 4077.0
+Batch 10 of size 50 processed in Task 2 and took 175.0 minutes finishing at 4254.0
+Unit 1 is processing a batch at time 4077.0
+Task 6 begins processing batch Batch 9 of size 50 at time 4077.0
+Batch 9 of size 50 unloaded from Buffer 5 at time 4077.0
+Buffer 5 now contains 0 wafers at time 4077.0
+Batch 9 of size 50 processed in Task 6 and took 25.0 minutes finishing at 4104.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 9 of size 50 loaded to Buffer 6 at time 4104.0
+Buffer 6 now contains 50 wafers at time 4104.0
+Unit 1 is set idle to true at 4104.0
+Unit 1 has no batches to process at time 4104.0
+Batch 8 of size 50 loaded to Buffer 8 at time 4115.0
+Buffer 8 now contains 50 wafers at time 4115.0
+Unit 3 is set idle to true at 4115.0
+Unit 1 is processing a batch at time 4115.0
+Task 9 begins processing batch Batch 8 of size 50 at time 4115.0
+Batch 8 of size 50 unloaded from Buffer 8 at time 4115.0
+Buffer 8 now contains 0 wafers at time 4115.0
+Batch 8 of size 50 processed in Task 9 and took 15.0 minutes finishing at 4132.0
+Unit 3 has no batches to process at time 4115.0
+Unit 3 has no batches to process at time 4115.0
+Batch 8 of size 50 loaded to Buffer 9 at time 4132.0
+Finished processing batch Batch 8 of size 50. It is now in the final buffer at time 4132.0. Total number of wafers produced: 400
+Unit 1 is set idle to true at 4132.0
+Unit 1 has no batches to process at time 4132.0
+Batch 10 of size 50 loaded to Buffer 2 at time 4254.0
+Buffer 2 now contains 50 wafers at time 4254.0
+Unit 2 is set idle to true at 4254.0
+Unit 1 is processing a batch at time 4254.0
+Task 3 begins processing batch Batch 10 of size 50 at time 4254.0
+Batch 10 of size 50 unloaded from Buffer 2 at time 4254.0
+Buffer 2 now contains 0 wafers at time 4254.0
+Batch 10 of size 50 processed in Task 3 and took 60.0 minutes finishing at 4316.0
+Unit 2 is processing a batch at time 4254.0
+Task 7 begins processing batch Batch 9 of size 50 at time 4254.0
+Batch 9 of size 50 unloaded from Buffer 6 at time 4254.0
+Buffer 6 now contains 0 wafers at time 4254.0
+Batch 9 of size 50 processed in Task 7 and took 50 minutes finishing at 4306.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 9 of size 50 loaded to Buffer 7 at time 4306.0
+Buffer 7 now contains 50 wafers at time 4306.0
+Unit 2 is set idle to true at 4306.0
+Unit 3 is processing a batch at time 4306.0
+Task 8 begins processing batch Batch 9 of size 50 at time 4306.0
+Batch 9 of size 50 unloaded from Buffer 7 at time 4306.0
+Buffer 7 now contains 0 wafers at time 4306.0
+Batch 9 of size 50 processed in Task 8 and took 95.0 minutes finishing at 4403.0
+Unit 2 has no batches to process at time 4306.0
+Unit 2 has no batches to process at time 4306.0
+Batch 10 of size 50 loaded to Buffer 3 at time 4316.0
+Buffer 3 now contains 50 wafers at time 4316.0
+Unit 1 is set idle to true at 4316.0
+Unit 1 has no batches to process at time 4316.0
+Batch 9 of size 50 loaded to Buffer 8 at time 4403.0
+Buffer 8 now contains 50 wafers at time 4403.0
+Unit 3 is set idle to true at 4403.0
+Unit 1 is processing a batch at time 4403.0
+Task 9 begins processing batch Batch 9 of size 50 at time 4403.0
+Batch 9 of size 50 unloaded from Buffer 8 at time 4403.0
+Buffer 8 now contains 0 wafers at time 4403.0
+Batch 9 of size 50 processed in Task 9 and took 15.0 minutes finishing at 4420.0
+Unit 3 is processing a batch at time 4403.0
+Task 4 begins processing batch Batch 10 of size 50 at time 4403.0
+Batch 10 of size 50 unloaded from Buffer 3 at time 4403.0
+Buffer 3 now contains 0 wafers at time 4403.0
+Batch 10 of size 50 processed in Task 4 and took 150 minutes finishing at 4555.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 9 of size 50 loaded to Buffer 9 at time 4420.0
+Finished processing batch Batch 9 of size 50. It is now in the final buffer at time 4420.0. Total number of wafers produced: 450
+Unit 1 is set idle to true at 4420.0
+Unit 1 has no batches to process at time 4420.0
+Batch 11 of size 50 loaded to Buffer 0 at time 4500
+Buffer 0 now contains 50 wafers at time 4500
+Unit 1 is processing a batch at time 4500
+Task 1 begins processing batch Batch 11 of size 50 at time 4500
+Batch 11 of size 50 unloaded from Buffer 0 at time 4500
+Buffer 0 now contains 0 wafers at time 4500
+Batch 11 of size 50 processed in Task 1 and took 25.0 minutes finishing at 4527.0
+Batch 11 of size 50 loaded to Buffer 1 at time 4527.0
+Buffer 1 now contains 50 wafers at time 4527.0
+Unit 1 is set idle to true at 4527.0
+Unit 2 is processing a batch at time 4527.0
+Task 2 begins processing batch Batch 11 of size 50 at time 4527.0
+Batch 11 of size 50 unloaded from Buffer 1 at time 4527.0
+Buffer 1 now contains 0 wafers at time 4527.0
+Batch 11 of size 50 processed in Task 2 and took 175.0 minutes finishing at 4704.0
+Unit 1 has no batches to process at time 4527.0
+Unit 1 has no batches to process at time 4527.0
+Batch 10 of size 50 loaded to Buffer 4 at time 4555.0
+Buffer 4 now contains 50 wafers at time 4555.0
+Unit 3 is set idle to true at 4555.0
+Unit 3 has no batches to process at time 4555.0
+Batch 11 of size 50 loaded to Buffer 2 at time 4704.0
+Buffer 2 now contains 50 wafers at time 4704.0
+Unit 2 is set idle to true at 4704.0
+Unit 1 is processing a batch at time 4704.0
+Task 3 begins processing batch Batch 11 of size 50 at time 4704.0
+Batch 11 of size 50 unloaded from Buffer 2 at time 4704.0
+Buffer 2 now contains 0 wafers at time 4704.0
+Batch 11 of size 50 processed in Task 3 and took 60.0 minutes finishing at 4766.0
+Unit 2 is processing a batch at time 4704.0
+Task 5 begins processing batch Batch 10 of size 50 at time 4704.0
+Batch 10 of size 50 unloaded from Buffer 4 at time 4704.0
+Buffer 4 now contains 0 wafers at time 4704.0
+Batch 10 of size 50 processed in Task 5 and took 40.0 minutes finishing at 4746.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 4704.0
+Batch 10 of size 50 loaded to Buffer 5 at time 4746.0
+Buffer 5 now contains 50 wafers at time 4746.0
+Unit 2 is set idle to true at 4746.0
+Unit 2 has no batches to process at time 4746.0
+Batch 11 of size 50 loaded to Buffer 3 at time 4766.0
+Buffer 3 now contains 50 wafers at time 4766.0
+Unit 1 is set idle to true at 4766.0
+Unit 3 is processing a batch at time 4766.0
+Task 4 begins processing batch Batch 11 of size 50 at time 4766.0
+Batch 11 of size 50 unloaded from Buffer 3 at time 4766.0
+Buffer 3 now contains 0 wafers at time 4766.0
+Batch 11 of size 50 processed in Task 4 and took 150 minutes finishing at 4918.0
+Unit 1 is processing a batch at time 4766.0
+Task 6 begins processing batch Batch 10 of size 50 at time 4766.0
+Batch 10 of size 50 unloaded from Buffer 5 at time 4766.0
+Buffer 5 now contains 0 wafers at time 4766.0
+Batch 10 of size 50 processed in Task 6 and took 25.0 minutes finishing at 4793.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 4766.0
+Batch 10 of size 50 loaded to Buffer 6 at time 4793.0
+Buffer 6 now contains 50 wafers at time 4793.0
+Unit 1 is set idle to true at 4793.0
+Unit 2 is processing a batch at time 4793.0
+Task 7 begins processing batch Batch 10 of size 50 at time 4793.0
+Batch 10 of size 50 unloaded from Buffer 6 at time 4793.0
+Buffer 6 now contains 0 wafers at time 4793.0
+Batch 10 of size 50 processed in Task 7 and took 50 minutes finishing at 4845.0
+Unit 1 has no batches to process at time 4793.0
+Unit 1 has no batches to process at time 4793.0
+Batch 10 of size 50 loaded to Buffer 7 at time 4845.0
+Buffer 7 now contains 50 wafers at time 4845.0
+Unit 2 is set idle to true at 4845.0
+Unit 2 has no batches to process at time 4845.0
+Batch 11 of size 50 loaded to Buffer 4 at time 4918.0
+Buffer 4 now contains 50 wafers at time 4918.0
+Unit 3 is set idle to true at 4918.0
+Unit 2 is processing a batch at time 4918.0
+Task 5 begins processing batch Batch 11 of size 50 at time 4918.0
+Batch 11 of size 50 unloaded from Buffer 4 at time 4918.0
+Buffer 4 now contains 0 wafers at time 4918.0
+Batch 11 of size 50 processed in Task 5 and took 40.0 minutes finishing at 4960.0
+Unit 3 is processing a batch at time 4918.0
+Task 8 begins processing batch Batch 10 of size 50 at time 4918.0
+Batch 10 of size 50 unloaded from Buffer 7 at time 4918.0
+Buffer 7 now contains 0 wafers at time 4918.0
+Batch 10 of size 50 processed in Task 8 and took 95.0 minutes finishing at 5015.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 12 of size 50 loaded to Buffer 0 at time 4950
+Buffer 0 now contains 50 wafers at time 4950
+Unit 1 is processing a batch at time 4950
+Task 1 begins processing batch Batch 12 of size 50 at time 4950
+Batch 12 of size 50 unloaded from Buffer 0 at time 4950
+Buffer 0 now contains 0 wafers at time 4950
+Batch 12 of size 50 processed in Task 1 and took 25.0 minutes finishing at 4977.0
+Batch 11 of size 50 loaded to Buffer 5 at time 4960.0
+Buffer 5 now contains 50 wafers at time 4960.0
+Unit 2 is set idle to true at 4960.0
+Unit 2 has no batches to process at time 4960.0
+Batch 12 of size 50 loaded to Buffer 1 at time 4977.0
+Buffer 1 now contains 50 wafers at time 4977.0
+Unit 1 is set idle to true at 4977.0
+Unit 2 is processing a batch at time 4977.0
+Task 2 begins processing batch Batch 12 of size 50 at time 4977.0
+Batch 12 of size 50 unloaded from Buffer 1 at time 4977.0
+Buffer 1 now contains 0 wafers at time 4977.0
+Batch 12 of size 50 processed in Task 2 and took 175.0 minutes finishing at 5154.0
+Unit 1 is processing a batch at time 4977.0
+Task 6 begins processing batch Batch 11 of size 50 at time 4977.0
+Batch 11 of size 50 unloaded from Buffer 5 at time 4977.0
+Buffer 5 now contains 0 wafers at time 4977.0
+Batch 11 of size 50 processed in Task 6 and took 25.0 minutes finishing at 5004.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 11 of size 50 loaded to Buffer 6 at time 5004.0
+Buffer 6 now contains 50 wafers at time 5004.0
+Unit 1 is set idle to true at 5004.0
+Unit 1 has no batches to process at time 5004.0
+Batch 10 of size 50 loaded to Buffer 8 at time 5015.0
+Buffer 8 now contains 50 wafers at time 5015.0
+Unit 3 is set idle to true at 5015.0
+Unit 1 is processing a batch at time 5015.0
+Task 9 begins processing batch Batch 10 of size 50 at time 5015.0
+Batch 10 of size 50 unloaded from Buffer 8 at time 5015.0
+Buffer 8 now contains 0 wafers at time 5015.0
+Batch 10 of size 50 processed in Task 9 and took 15.0 minutes finishing at 5032.0
+Unit 3 has no batches to process at time 5015.0
+Unit 3 has no batches to process at time 5015.0
+Batch 10 of size 50 loaded to Buffer 9 at time 5032.0
+Finished processing batch Batch 10 of size 50. It is now in the final buffer at time 5032.0. Total number of wafers produced: 500
+Unit 1 is set idle to true at 5032.0
+Unit 1 has no batches to process at time 5032.0
+Batch 12 of size 50 loaded to Buffer 2 at time 5154.0
+Buffer 2 now contains 50 wafers at time 5154.0
+Unit 2 is set idle to true at 5154.0
+Unit 1 is processing a batch at time 5154.0
+Task 3 begins processing batch Batch 12 of size 50 at time 5154.0
+Batch 12 of size 50 unloaded from Buffer 2 at time 5154.0
+Buffer 2 now contains 0 wafers at time 5154.0
+Batch 12 of size 50 processed in Task 3 and took 60.0 minutes finishing at 5216.0
+Unit 2 is processing a batch at time 5154.0
+Task 7 begins processing batch Batch 11 of size 50 at time 5154.0
+Batch 11 of size 50 unloaded from Buffer 6 at time 5154.0
+Buffer 6 now contains 0 wafers at time 5154.0
+Batch 11 of size 50 processed in Task 7 and took 50 minutes finishing at 5206.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 11 of size 50 loaded to Buffer 7 at time 5206.0
+Buffer 7 now contains 50 wafers at time 5206.0
+Unit 2 is set idle to true at 5206.0
+Unit 3 is processing a batch at time 5206.0
+Task 8 begins processing batch Batch 11 of size 50 at time 5206.0
+Batch 11 of size 50 unloaded from Buffer 7 at time 5206.0
+Buffer 7 now contains 0 wafers at time 5206.0
+Batch 11 of size 50 processed in Task 8 and took 95.0 minutes finishing at 5303.0
+Unit 2 has no batches to process at time 5206.0
+Unit 2 has no batches to process at time 5206.0
+Batch 12 of size 50 loaded to Buffer 3 at time 5216.0
+Buffer 3 now contains 50 wafers at time 5216.0
+Unit 1 is set idle to true at 5216.0
+Unit 1 has no batches to process at time 5216.0
+Batch 11 of size 50 loaded to Buffer 8 at time 5303.0
+Buffer 8 now contains 50 wafers at time 5303.0
+Unit 3 is set idle to true at 5303.0
+Unit 1 is processing a batch at time 5303.0
+Task 9 begins processing batch Batch 11 of size 50 at time 5303.0
+Batch 11 of size 50 unloaded from Buffer 8 at time 5303.0
+Buffer 8 now contains 0 wafers at time 5303.0
+Batch 11 of size 50 processed in Task 9 and took 15.0 minutes finishing at 5320.0
+Unit 3 is processing a batch at time 5303.0
+Task 4 begins processing batch Batch 12 of size 50 at time 5303.0
+Batch 12 of size 50 unloaded from Buffer 3 at time 5303.0
+Buffer 3 now contains 0 wafers at time 5303.0
+Batch 12 of size 50 processed in Task 4 and took 150 minutes finishing at 5455.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 11 of size 50 loaded to Buffer 9 at time 5320.0
+Finished processing batch Batch 11 of size 50. It is now in the final buffer at time 5320.0. Total number of wafers produced: 550
+Unit 1 is set idle to true at 5320.0
+Unit 1 has no batches to process at time 5320.0
+Batch 13 of size 50 loaded to Buffer 0 at time 5400
+Buffer 0 now contains 50 wafers at time 5400
+Unit 1 is processing a batch at time 5400
+Task 1 begins processing batch Batch 13 of size 50 at time 5400
+Batch 13 of size 50 unloaded from Buffer 0 at time 5400
+Buffer 0 now contains 0 wafers at time 5400
+Batch 13 of size 50 processed in Task 1 and took 25.0 minutes finishing at 5427.0
+Batch 13 of size 50 loaded to Buffer 1 at time 5427.0
+Buffer 1 now contains 50 wafers at time 5427.0
+Unit 1 is set idle to true at 5427.0
+Unit 2 is processing a batch at time 5427.0
+Task 2 begins processing batch Batch 13 of size 50 at time 5427.0
+Batch 13 of size 50 unloaded from Buffer 1 at time 5427.0
+Buffer 1 now contains 0 wafers at time 5427.0
+Batch 13 of size 50 processed in Task 2 and took 175.0 minutes finishing at 5604.0
+Unit 1 has no batches to process at time 5427.0
+Unit 1 has no batches to process at time 5427.0
+Batch 12 of size 50 loaded to Buffer 4 at time 5455.0
+Buffer 4 now contains 50 wafers at time 5455.0
+Unit 3 is set idle to true at 5455.0
+Unit 3 has no batches to process at time 5455.0
+Batch 13 of size 50 loaded to Buffer 2 at time 5604.0
+Buffer 2 now contains 50 wafers at time 5604.0
+Unit 2 is set idle to true at 5604.0
+Unit 1 is processing a batch at time 5604.0
+Task 3 begins processing batch Batch 13 of size 50 at time 5604.0
+Batch 13 of size 50 unloaded from Buffer 2 at time 5604.0
+Buffer 2 now contains 0 wafers at time 5604.0
+Batch 13 of size 50 processed in Task 3 and took 60.0 minutes finishing at 5666.0
+Unit 2 is processing a batch at time 5604.0
+Task 5 begins processing batch Batch 12 of size 50 at time 5604.0
+Batch 12 of size 50 unloaded from Buffer 4 at time 5604.0
+Buffer 4 now contains 0 wafers at time 5604.0
+Batch 12 of size 50 processed in Task 5 and took 40.0 minutes finishing at 5646.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 5604.0
+Batch 12 of size 50 loaded to Buffer 5 at time 5646.0
+Buffer 5 now contains 50 wafers at time 5646.0
+Unit 2 is set idle to true at 5646.0
+Unit 2 has no batches to process at time 5646.0
+Batch 13 of size 50 loaded to Buffer 3 at time 5666.0
+Buffer 3 now contains 50 wafers at time 5666.0
+Unit 1 is set idle to true at 5666.0
+Unit 3 is processing a batch at time 5666.0
+Task 4 begins processing batch Batch 13 of size 50 at time 5666.0
+Batch 13 of size 50 unloaded from Buffer 3 at time 5666.0
+Buffer 3 now contains 0 wafers at time 5666.0
+Batch 13 of size 50 processed in Task 4 and took 150 minutes finishing at 5818.0
+Unit 1 is processing a batch at time 5666.0
+Task 6 begins processing batch Batch 12 of size 50 at time 5666.0
+Batch 12 of size 50 unloaded from Buffer 5 at time 5666.0
+Buffer 5 now contains 0 wafers at time 5666.0
+Batch 12 of size 50 processed in Task 6 and took 25.0 minutes finishing at 5693.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 5666.0
+Batch 12 of size 50 loaded to Buffer 6 at time 5693.0
+Buffer 6 now contains 50 wafers at time 5693.0
+Unit 1 is set idle to true at 5693.0
+Unit 2 is processing a batch at time 5693.0
+Task 7 begins processing batch Batch 12 of size 50 at time 5693.0
+Batch 12 of size 50 unloaded from Buffer 6 at time 5693.0
+Buffer 6 now contains 0 wafers at time 5693.0
+Batch 12 of size 50 processed in Task 7 and took 50 minutes finishing at 5745.0
+Unit 1 has no batches to process at time 5693.0
+Unit 1 has no batches to process at time 5693.0
+Batch 12 of size 50 loaded to Buffer 7 at time 5745.0
+Buffer 7 now contains 50 wafers at time 5745.0
+Unit 2 is set idle to true at 5745.0
+Unit 2 has no batches to process at time 5745.0
+Batch 13 of size 50 loaded to Buffer 4 at time 5818.0
+Buffer 4 now contains 50 wafers at time 5818.0
+Unit 3 is set idle to true at 5818.0
+Unit 2 is processing a batch at time 5818.0
+Task 5 begins processing batch Batch 13 of size 50 at time 5818.0
+Batch 13 of size 50 unloaded from Buffer 4 at time 5818.0
+Buffer 4 now contains 0 wafers at time 5818.0
+Batch 13 of size 50 processed in Task 5 and took 40.0 minutes finishing at 5860.0
+Unit 3 is processing a batch at time 5818.0
+Task 8 begins processing batch Batch 12 of size 50 at time 5818.0
+Batch 12 of size 50 unloaded from Buffer 7 at time 5818.0
+Buffer 7 now contains 0 wafers at time 5818.0
+Batch 12 of size 50 processed in Task 8 and took 95.0 minutes finishing at 5915.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 14 of size 50 loaded to Buffer 0 at time 5850
+Buffer 0 now contains 50 wafers at time 5850
+Unit 1 is processing a batch at time 5850
+Task 1 begins processing batch Batch 14 of size 50 at time 5850
+Batch 14 of size 50 unloaded from Buffer 0 at time 5850
+Buffer 0 now contains 0 wafers at time 5850
+Batch 14 of size 50 processed in Task 1 and took 25.0 minutes finishing at 5877.0
+Batch 13 of size 50 loaded to Buffer 5 at time 5860.0
+Buffer 5 now contains 50 wafers at time 5860.0
+Unit 2 is set idle to true at 5860.0
+Unit 2 has no batches to process at time 5860.0
+Batch 14 of size 50 loaded to Buffer 1 at time 5877.0
+Buffer 1 now contains 50 wafers at time 5877.0
+Unit 1 is set idle to true at 5877.0
+Unit 2 is processing a batch at time 5877.0
+Task 2 begins processing batch Batch 14 of size 50 at time 5877.0
+Batch 14 of size 50 unloaded from Buffer 1 at time 5877.0
+Buffer 1 now contains 0 wafers at time 5877.0
+Batch 14 of size 50 processed in Task 2 and took 175.0 minutes finishing at 6054.0
+Unit 1 is processing a batch at time 5877.0
+Task 6 begins processing batch Batch 13 of size 50 at time 5877.0
+Batch 13 of size 50 unloaded from Buffer 5 at time 5877.0
+Buffer 5 now contains 0 wafers at time 5877.0
+Batch 13 of size 50 processed in Task 6 and took 25.0 minutes finishing at 5904.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 13 of size 50 loaded to Buffer 6 at time 5904.0
+Buffer 6 now contains 50 wafers at time 5904.0
+Unit 1 is set idle to true at 5904.0
+Unit 1 has no batches to process at time 5904.0
+Batch 12 of size 50 loaded to Buffer 8 at time 5915.0
+Buffer 8 now contains 50 wafers at time 5915.0
+Unit 3 is set idle to true at 5915.0
+Unit 1 is processing a batch at time 5915.0
+Task 9 begins processing batch Batch 12 of size 50 at time 5915.0
+Batch 12 of size 50 unloaded from Buffer 8 at time 5915.0
+Buffer 8 now contains 0 wafers at time 5915.0
+Batch 12 of size 50 processed in Task 9 and took 15.0 minutes finishing at 5932.0
+Unit 3 has no batches to process at time 5915.0
+Unit 3 has no batches to process at time 5915.0
+Batch 12 of size 50 loaded to Buffer 9 at time 5932.0
+Finished processing batch Batch 12 of size 50. It is now in the final buffer at time 5932.0. Total number of wafers produced: 600
+Unit 1 is set idle to true at 5932.0
+Unit 1 has no batches to process at time 5932.0
+Batch 14 of size 50 loaded to Buffer 2 at time 6054.0
+Buffer 2 now contains 50 wafers at time 6054.0
+Unit 2 is set idle to true at 6054.0
+Unit 1 is processing a batch at time 6054.0
+Task 3 begins processing batch Batch 14 of size 50 at time 6054.0
+Batch 14 of size 50 unloaded from Buffer 2 at time 6054.0
+Buffer 2 now contains 0 wafers at time 6054.0
+Batch 14 of size 50 processed in Task 3 and took 60.0 minutes finishing at 6116.0
+Unit 2 is processing a batch at time 6054.0
+Task 7 begins processing batch Batch 13 of size 50 at time 6054.0
+Batch 13 of size 50 unloaded from Buffer 6 at time 6054.0
+Buffer 6 now contains 0 wafers at time 6054.0
+Batch 13 of size 50 processed in Task 7 and took 50 minutes finishing at 6106.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 13 of size 50 loaded to Buffer 7 at time 6106.0
+Buffer 7 now contains 50 wafers at time 6106.0
+Unit 2 is set idle to true at 6106.0
+Unit 3 is processing a batch at time 6106.0
+Task 8 begins processing batch Batch 13 of size 50 at time 6106.0
+Batch 13 of size 50 unloaded from Buffer 7 at time 6106.0
+Buffer 7 now contains 0 wafers at time 6106.0
+Batch 13 of size 50 processed in Task 8 and took 95.0 minutes finishing at 6203.0
+Unit 2 has no batches to process at time 6106.0
+Unit 2 has no batches to process at time 6106.0
+Batch 14 of size 50 loaded to Buffer 3 at time 6116.0
+Buffer 3 now contains 50 wafers at time 6116.0
+Unit 1 is set idle to true at 6116.0
+Unit 1 has no batches to process at time 6116.0
+Batch 13 of size 50 loaded to Buffer 8 at time 6203.0
+Buffer 8 now contains 50 wafers at time 6203.0
+Unit 3 is set idle to true at 6203.0
+Unit 1 is processing a batch at time 6203.0
+Task 9 begins processing batch Batch 13 of size 50 at time 6203.0
+Batch 13 of size 50 unloaded from Buffer 8 at time 6203.0
+Buffer 8 now contains 0 wafers at time 6203.0
+Batch 13 of size 50 processed in Task 9 and took 15.0 minutes finishing at 6220.0
+Unit 3 is processing a batch at time 6203.0
+Task 4 begins processing batch Batch 14 of size 50 at time 6203.0
+Batch 14 of size 50 unloaded from Buffer 3 at time 6203.0
+Buffer 3 now contains 0 wafers at time 6203.0
+Batch 14 of size 50 processed in Task 4 and took 150 minutes finishing at 6355.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 13 of size 50 loaded to Buffer 9 at time 6220.0
+Finished processing batch Batch 13 of size 50. It is now in the final buffer at time 6220.0. Total number of wafers produced: 650
+Unit 1 is set idle to true at 6220.0
+Unit 1 has no batches to process at time 6220.0
+Batch 15 of size 50 loaded to Buffer 0 at time 6300
+Buffer 0 now contains 50 wafers at time 6300
+Unit 1 is processing a batch at time 6300
+Task 1 begins processing batch Batch 15 of size 50 at time 6300
+Batch 15 of size 50 unloaded from Buffer 0 at time 6300
+Buffer 0 now contains 0 wafers at time 6300
+Batch 15 of size 50 processed in Task 1 and took 25.0 minutes finishing at 6327.0
+Batch 15 of size 50 loaded to Buffer 1 at time 6327.0
+Buffer 1 now contains 50 wafers at time 6327.0
+Unit 1 is set idle to true at 6327.0
+Unit 2 is processing a batch at time 6327.0
+Task 2 begins processing batch Batch 15 of size 50 at time 6327.0
+Batch 15 of size 50 unloaded from Buffer 1 at time 6327.0
+Buffer 1 now contains 0 wafers at time 6327.0
+Batch 15 of size 50 processed in Task 2 and took 175.0 minutes finishing at 6504.0
+Unit 1 has no batches to process at time 6327.0
+Unit 1 has no batches to process at time 6327.0
+Batch 14 of size 50 loaded to Buffer 4 at time 6355.0
+Buffer 4 now contains 50 wafers at time 6355.0
+Unit 3 is set idle to true at 6355.0
+Unit 3 has no batches to process at time 6355.0
+Batch 15 of size 50 loaded to Buffer 2 at time 6504.0
+Buffer 2 now contains 50 wafers at time 6504.0
+Unit 2 is set idle to true at 6504.0
+Unit 1 is processing a batch at time 6504.0
+Task 3 begins processing batch Batch 15 of size 50 at time 6504.0
+Batch 15 of size 50 unloaded from Buffer 2 at time 6504.0
+Buffer 2 now contains 0 wafers at time 6504.0
+Batch 15 of size 50 processed in Task 3 and took 60.0 minutes finishing at 6566.0
+Unit 2 is processing a batch at time 6504.0
+Task 5 begins processing batch Batch 14 of size 50 at time 6504.0
+Batch 14 of size 50 unloaded from Buffer 4 at time 6504.0
+Buffer 4 now contains 0 wafers at time 6504.0
+Batch 14 of size 50 processed in Task 5 and took 40.0 minutes finishing at 6546.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 6504.0
+Batch 14 of size 50 loaded to Buffer 5 at time 6546.0
+Buffer 5 now contains 50 wafers at time 6546.0
+Unit 2 is set idle to true at 6546.0
+Unit 2 has no batches to process at time 6546.0
+Batch 15 of size 50 loaded to Buffer 3 at time 6566.0
+Buffer 3 now contains 50 wafers at time 6566.0
+Unit 1 is set idle to true at 6566.0
+Unit 3 is processing a batch at time 6566.0
+Task 4 begins processing batch Batch 15 of size 50 at time 6566.0
+Batch 15 of size 50 unloaded from Buffer 3 at time 6566.0
+Buffer 3 now contains 0 wafers at time 6566.0
+Batch 15 of size 50 processed in Task 4 and took 150 minutes finishing at 6718.0
+Unit 1 is processing a batch at time 6566.0
+Task 6 begins processing batch Batch 14 of size 50 at time 6566.0
+Batch 14 of size 50 unloaded from Buffer 5 at time 6566.0
+Buffer 5 now contains 0 wafers at time 6566.0
+Batch 14 of size 50 processed in Task 6 and took 25.0 minutes finishing at 6593.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 6566.0
+Batch 14 of size 50 loaded to Buffer 6 at time 6593.0
+Buffer 6 now contains 50 wafers at time 6593.0
+Unit 1 is set idle to true at 6593.0
+Unit 2 is processing a batch at time 6593.0
+Task 7 begins processing batch Batch 14 of size 50 at time 6593.0
+Batch 14 of size 50 unloaded from Buffer 6 at time 6593.0
+Buffer 6 now contains 0 wafers at time 6593.0
+Batch 14 of size 50 processed in Task 7 and took 50 minutes finishing at 6645.0
+Unit 1 has no batches to process at time 6593.0
+Unit 1 has no batches to process at time 6593.0
+Batch 14 of size 50 loaded to Buffer 7 at time 6645.0
+Buffer 7 now contains 50 wafers at time 6645.0
+Unit 2 is set idle to true at 6645.0
+Unit 2 has no batches to process at time 6645.0
+Batch 15 of size 50 loaded to Buffer 4 at time 6718.0
+Buffer 4 now contains 50 wafers at time 6718.0
+Unit 3 is set idle to true at 6718.0
+Unit 2 is processing a batch at time 6718.0
+Task 5 begins processing batch Batch 15 of size 50 at time 6718.0
+Batch 15 of size 50 unloaded from Buffer 4 at time 6718.0
+Buffer 4 now contains 0 wafers at time 6718.0
+Batch 15 of size 50 processed in Task 5 and took 40.0 minutes finishing at 6760.0
+Unit 3 is processing a batch at time 6718.0
+Task 8 begins processing batch Batch 14 of size 50 at time 6718.0
+Batch 14 of size 50 unloaded from Buffer 7 at time 6718.0
+Buffer 7 now contains 0 wafers at time 6718.0
+Batch 14 of size 50 processed in Task 8 and took 95.0 minutes finishing at 6815.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 16 of size 50 loaded to Buffer 0 at time 6750
+Buffer 0 now contains 50 wafers at time 6750
+Unit 1 is processing a batch at time 6750
+Task 1 begins processing batch Batch 16 of size 50 at time 6750
+Batch 16 of size 50 unloaded from Buffer 0 at time 6750
+Buffer 0 now contains 0 wafers at time 6750
+Batch 16 of size 50 processed in Task 1 and took 25.0 minutes finishing at 6777.0
+Batch 15 of size 50 loaded to Buffer 5 at time 6760.0
+Buffer 5 now contains 50 wafers at time 6760.0
+Unit 2 is set idle to true at 6760.0
+Unit 2 has no batches to process at time 6760.0
+Batch 16 of size 50 loaded to Buffer 1 at time 6777.0
+Buffer 1 now contains 50 wafers at time 6777.0
+Unit 1 is set idle to true at 6777.0
+Unit 2 is processing a batch at time 6777.0
+Task 2 begins processing batch Batch 16 of size 50 at time 6777.0
+Batch 16 of size 50 unloaded from Buffer 1 at time 6777.0
+Buffer 1 now contains 0 wafers at time 6777.0
+Batch 16 of size 50 processed in Task 2 and took 175.0 minutes finishing at 6954.0
+Unit 1 is processing a batch at time 6777.0
+Task 6 begins processing batch Batch 15 of size 50 at time 6777.0
+Batch 15 of size 50 unloaded from Buffer 5 at time 6777.0
+Buffer 5 now contains 0 wafers at time 6777.0
+Batch 15 of size 50 processed in Task 6 and took 25.0 minutes finishing at 6804.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 15 of size 50 loaded to Buffer 6 at time 6804.0
+Buffer 6 now contains 50 wafers at time 6804.0
+Unit 1 is set idle to true at 6804.0
+Unit 1 has no batches to process at time 6804.0
+Batch 14 of size 50 loaded to Buffer 8 at time 6815.0
+Buffer 8 now contains 50 wafers at time 6815.0
+Unit 3 is set idle to true at 6815.0
+Unit 1 is processing a batch at time 6815.0
+Task 9 begins processing batch Batch 14 of size 50 at time 6815.0
+Batch 14 of size 50 unloaded from Buffer 8 at time 6815.0
+Buffer 8 now contains 0 wafers at time 6815.0
+Batch 14 of size 50 processed in Task 9 and took 15.0 minutes finishing at 6832.0
+Unit 3 has no batches to process at time 6815.0
+Unit 3 has no batches to process at time 6815.0
+Batch 14 of size 50 loaded to Buffer 9 at time 6832.0
+Finished processing batch Batch 14 of size 50. It is now in the final buffer at time 6832.0. Total number of wafers produced: 700
+Unit 1 is set idle to true at 6832.0
+Unit 1 has no batches to process at time 6832.0
+Batch 16 of size 50 loaded to Buffer 2 at time 6954.0
+Buffer 2 now contains 50 wafers at time 6954.0
+Unit 2 is set idle to true at 6954.0
+Unit 1 is processing a batch at time 6954.0
+Task 3 begins processing batch Batch 16 of size 50 at time 6954.0
+Batch 16 of size 50 unloaded from Buffer 2 at time 6954.0
+Buffer 2 now contains 0 wafers at time 6954.0
+Batch 16 of size 50 processed in Task 3 and took 60.0 minutes finishing at 7016.0
+Unit 2 is processing a batch at time 6954.0
+Task 7 begins processing batch Batch 15 of size 50 at time 6954.0
+Batch 15 of size 50 unloaded from Buffer 6 at time 6954.0
+Buffer 6 now contains 0 wafers at time 6954.0
+Batch 15 of size 50 processed in Task 7 and took 50 minutes finishing at 7006.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 15 of size 50 loaded to Buffer 7 at time 7006.0
+Buffer 7 now contains 50 wafers at time 7006.0
+Unit 2 is set idle to true at 7006.0
+Unit 3 is processing a batch at time 7006.0
+Task 8 begins processing batch Batch 15 of size 50 at time 7006.0
+Batch 15 of size 50 unloaded from Buffer 7 at time 7006.0
+Buffer 7 now contains 0 wafers at time 7006.0
+Batch 15 of size 50 processed in Task 8 and took 95.0 minutes finishing at 7103.0
+Unit 2 has no batches to process at time 7006.0
+Unit 2 has no batches to process at time 7006.0
+Batch 16 of size 50 loaded to Buffer 3 at time 7016.0
+Buffer 3 now contains 50 wafers at time 7016.0
+Unit 1 is set idle to true at 7016.0
+Unit 1 has no batches to process at time 7016.0
+Batch 15 of size 50 loaded to Buffer 8 at time 7103.0
+Buffer 8 now contains 50 wafers at time 7103.0
+Unit 3 is set idle to true at 7103.0
+Unit 1 is processing a batch at time 7103.0
+Task 9 begins processing batch Batch 15 of size 50 at time 7103.0
+Batch 15 of size 50 unloaded from Buffer 8 at time 7103.0
+Buffer 8 now contains 0 wafers at time 7103.0
+Batch 15 of size 50 processed in Task 9 and took 15.0 minutes finishing at 7120.0
+Unit 3 is processing a batch at time 7103.0
+Task 4 begins processing batch Batch 16 of size 50 at time 7103.0
+Batch 16 of size 50 unloaded from Buffer 3 at time 7103.0
+Buffer 3 now contains 0 wafers at time 7103.0
+Batch 16 of size 50 processed in Task 4 and took 150 minutes finishing at 7255.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 15 of size 50 loaded to Buffer 9 at time 7120.0
+Finished processing batch Batch 15 of size 50. It is now in the final buffer at time 7120.0. Total number of wafers produced: 750
+Unit 1 is set idle to true at 7120.0
+Unit 1 has no batches to process at time 7120.0
+Batch 17 of size 50 loaded to Buffer 0 at time 7200
+Buffer 0 now contains 50 wafers at time 7200
+Unit 1 is processing a batch at time 7200
+Task 1 begins processing batch Batch 17 of size 50 at time 7200
+Batch 17 of size 50 unloaded from Buffer 0 at time 7200
+Buffer 0 now contains 0 wafers at time 7200
+Batch 17 of size 50 processed in Task 1 and took 25.0 minutes finishing at 7227.0
+Batch 17 of size 50 loaded to Buffer 1 at time 7227.0
+Buffer 1 now contains 50 wafers at time 7227.0
+Unit 1 is set idle to true at 7227.0
+Unit 2 is processing a batch at time 7227.0
+Task 2 begins processing batch Batch 17 of size 50 at time 7227.0
+Batch 17 of size 50 unloaded from Buffer 1 at time 7227.0
+Buffer 1 now contains 0 wafers at time 7227.0
+Batch 17 of size 50 processed in Task 2 and took 175.0 minutes finishing at 7404.0
+Unit 1 has no batches to process at time 7227.0
+Unit 1 has no batches to process at time 7227.0
+Batch 16 of size 50 loaded to Buffer 4 at time 7255.0
+Buffer 4 now contains 50 wafers at time 7255.0
+Unit 3 is set idle to true at 7255.0
+Unit 3 has no batches to process at time 7255.0
+Batch 17 of size 50 loaded to Buffer 2 at time 7404.0
+Buffer 2 now contains 50 wafers at time 7404.0
+Unit 2 is set idle to true at 7404.0
+Unit 1 is processing a batch at time 7404.0
+Task 3 begins processing batch Batch 17 of size 50 at time 7404.0
+Batch 17 of size 50 unloaded from Buffer 2 at time 7404.0
+Buffer 2 now contains 0 wafers at time 7404.0
+Batch 17 of size 50 processed in Task 3 and took 60.0 minutes finishing at 7466.0
+Unit 2 is processing a batch at time 7404.0
+Task 5 begins processing batch Batch 16 of size 50 at time 7404.0
+Batch 16 of size 50 unloaded from Buffer 4 at time 7404.0
+Buffer 4 now contains 0 wafers at time 7404.0
+Batch 16 of size 50 processed in Task 5 and took 40.0 minutes finishing at 7446.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 7404.0
+Batch 16 of size 50 loaded to Buffer 5 at time 7446.0
+Buffer 5 now contains 50 wafers at time 7446.0
+Unit 2 is set idle to true at 7446.0
+Unit 2 has no batches to process at time 7446.0
+Batch 17 of size 50 loaded to Buffer 3 at time 7466.0
+Buffer 3 now contains 50 wafers at time 7466.0
+Unit 1 is set idle to true at 7466.0
+Unit 3 is processing a batch at time 7466.0
+Task 4 begins processing batch Batch 17 of size 50 at time 7466.0
+Batch 17 of size 50 unloaded from Buffer 3 at time 7466.0
+Buffer 3 now contains 0 wafers at time 7466.0
+Batch 17 of size 50 processed in Task 4 and took 150 minutes finishing at 7618.0
+Unit 1 is processing a batch at time 7466.0
+Task 6 begins processing batch Batch 16 of size 50 at time 7466.0
+Batch 16 of size 50 unloaded from Buffer 5 at time 7466.0
+Buffer 5 now contains 0 wafers at time 7466.0
+Batch 16 of size 50 processed in Task 6 and took 25.0 minutes finishing at 7493.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 7466.0
+Batch 16 of size 50 loaded to Buffer 6 at time 7493.0
+Buffer 6 now contains 50 wafers at time 7493.0
+Unit 1 is set idle to true at 7493.0
+Unit 2 is processing a batch at time 7493.0
+Task 7 begins processing batch Batch 16 of size 50 at time 7493.0
+Batch 16 of size 50 unloaded from Buffer 6 at time 7493.0
+Buffer 6 now contains 0 wafers at time 7493.0
+Batch 16 of size 50 processed in Task 7 and took 50 minutes finishing at 7545.0
+Unit 1 has no batches to process at time 7493.0
+Unit 1 has no batches to process at time 7493.0
+Batch 16 of size 50 loaded to Buffer 7 at time 7545.0
+Buffer 7 now contains 50 wafers at time 7545.0
+Unit 2 is set idle to true at 7545.0
+Unit 2 has no batches to process at time 7545.0
+Batch 17 of size 50 loaded to Buffer 4 at time 7618.0
+Buffer 4 now contains 50 wafers at time 7618.0
+Unit 3 is set idle to true at 7618.0
+Unit 2 is processing a batch at time 7618.0
+Task 5 begins processing batch Batch 17 of size 50 at time 7618.0
+Batch 17 of size 50 unloaded from Buffer 4 at time 7618.0
+Buffer 4 now contains 0 wafers at time 7618.0
+Batch 17 of size 50 processed in Task 5 and took 40.0 minutes finishing at 7660.0
+Unit 3 is processing a batch at time 7618.0
+Task 8 begins processing batch Batch 16 of size 50 at time 7618.0
+Batch 16 of size 50 unloaded from Buffer 7 at time 7618.0
+Buffer 7 now contains 0 wafers at time 7618.0
+Batch 16 of size 50 processed in Task 8 and took 95.0 minutes finishing at 7715.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 18 of size 50 loaded to Buffer 0 at time 7650
+Buffer 0 now contains 50 wafers at time 7650
+Unit 1 is processing a batch at time 7650
+Task 1 begins processing batch Batch 18 of size 50 at time 7650
+Batch 18 of size 50 unloaded from Buffer 0 at time 7650
+Buffer 0 now contains 0 wafers at time 7650
+Batch 18 of size 50 processed in Task 1 and took 25.0 minutes finishing at 7677.0
+Batch 17 of size 50 loaded to Buffer 5 at time 7660.0
+Buffer 5 now contains 50 wafers at time 7660.0
+Unit 2 is set idle to true at 7660.0
+Unit 2 has no batches to process at time 7660.0
+Batch 18 of size 50 loaded to Buffer 1 at time 7677.0
+Buffer 1 now contains 50 wafers at time 7677.0
+Unit 1 is set idle to true at 7677.0
+Unit 2 is processing a batch at time 7677.0
+Task 2 begins processing batch Batch 18 of size 50 at time 7677.0
+Batch 18 of size 50 unloaded from Buffer 1 at time 7677.0
+Buffer 1 now contains 0 wafers at time 7677.0
+Batch 18 of size 50 processed in Task 2 and took 175.0 minutes finishing at 7854.0
+Unit 1 is processing a batch at time 7677.0
+Task 6 begins processing batch Batch 17 of size 50 at time 7677.0
+Batch 17 of size 50 unloaded from Buffer 5 at time 7677.0
+Buffer 5 now contains 0 wafers at time 7677.0
+Batch 17 of size 50 processed in Task 6 and took 25.0 minutes finishing at 7704.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 17 of size 50 loaded to Buffer 6 at time 7704.0
+Buffer 6 now contains 50 wafers at time 7704.0
+Unit 1 is set idle to true at 7704.0
+Unit 1 has no batches to process at time 7704.0
+Batch 16 of size 50 loaded to Buffer 8 at time 7715.0
+Buffer 8 now contains 50 wafers at time 7715.0
+Unit 3 is set idle to true at 7715.0
+Unit 1 is processing a batch at time 7715.0
+Task 9 begins processing batch Batch 16 of size 50 at time 7715.0
+Batch 16 of size 50 unloaded from Buffer 8 at time 7715.0
+Buffer 8 now contains 0 wafers at time 7715.0
+Batch 16 of size 50 processed in Task 9 and took 15.0 minutes finishing at 7732.0
+Unit 3 has no batches to process at time 7715.0
+Unit 3 has no batches to process at time 7715.0
+Batch 16 of size 50 loaded to Buffer 9 at time 7732.0
+Finished processing batch Batch 16 of size 50. It is now in the final buffer at time 7732.0. Total number of wafers produced: 800
+Unit 1 is set idle to true at 7732.0
+Unit 1 has no batches to process at time 7732.0
+Batch 18 of size 50 loaded to Buffer 2 at time 7854.0
+Buffer 2 now contains 50 wafers at time 7854.0
+Unit 2 is set idle to true at 7854.0
+Unit 1 is processing a batch at time 7854.0
+Task 3 begins processing batch Batch 18 of size 50 at time 7854.0
+Batch 18 of size 50 unloaded from Buffer 2 at time 7854.0
+Buffer 2 now contains 0 wafers at time 7854.0
+Batch 18 of size 50 processed in Task 3 and took 60.0 minutes finishing at 7916.0
+Unit 2 is processing a batch at time 7854.0
+Task 7 begins processing batch Batch 17 of size 50 at time 7854.0
+Batch 17 of size 50 unloaded from Buffer 6 at time 7854.0
+Buffer 6 now contains 0 wafers at time 7854.0
+Batch 17 of size 50 processed in Task 7 and took 50 minutes finishing at 7906.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 17 of size 50 loaded to Buffer 7 at time 7906.0
+Buffer 7 now contains 50 wafers at time 7906.0
+Unit 2 is set idle to true at 7906.0
+Unit 3 is processing a batch at time 7906.0
+Task 8 begins processing batch Batch 17 of size 50 at time 7906.0
+Batch 17 of size 50 unloaded from Buffer 7 at time 7906.0
+Buffer 7 now contains 0 wafers at time 7906.0
+Batch 17 of size 50 processed in Task 8 and took 95.0 minutes finishing at 8003.0
+Unit 2 has no batches to process at time 7906.0
+Unit 2 has no batches to process at time 7906.0
+Batch 18 of size 50 loaded to Buffer 3 at time 7916.0
+Buffer 3 now contains 50 wafers at time 7916.0
+Unit 1 is set idle to true at 7916.0
+Unit 1 has no batches to process at time 7916.0
+Batch 17 of size 50 loaded to Buffer 8 at time 8003.0
+Buffer 8 now contains 50 wafers at time 8003.0
+Unit 3 is set idle to true at 8003.0
+Unit 1 is processing a batch at time 8003.0
+Task 9 begins processing batch Batch 17 of size 50 at time 8003.0
+Batch 17 of size 50 unloaded from Buffer 8 at time 8003.0
+Buffer 8 now contains 0 wafers at time 8003.0
+Batch 17 of size 50 processed in Task 9 and took 15.0 minutes finishing at 8020.0
+Unit 3 is processing a batch at time 8003.0
+Task 4 begins processing batch Batch 18 of size 50 at time 8003.0
+Batch 18 of size 50 unloaded from Buffer 3 at time 8003.0
+Buffer 3 now contains 0 wafers at time 8003.0
+Batch 18 of size 50 processed in Task 4 and took 150 minutes finishing at 8155.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 17 of size 50 loaded to Buffer 9 at time 8020.0
+Finished processing batch Batch 17 of size 50. It is now in the final buffer at time 8020.0. Total number of wafers produced: 850
+Unit 1 is set idle to true at 8020.0
+Unit 1 has no batches to process at time 8020.0
+Batch 19 of size 50 loaded to Buffer 0 at time 8100
+Buffer 0 now contains 50 wafers at time 8100
+Unit 1 is processing a batch at time 8100
+Task 1 begins processing batch Batch 19 of size 50 at time 8100
+Batch 19 of size 50 unloaded from Buffer 0 at time 8100
+Buffer 0 now contains 0 wafers at time 8100
+Batch 19 of size 50 processed in Task 1 and took 25.0 minutes finishing at 8127.0
+Batch 19 of size 50 loaded to Buffer 1 at time 8127.0
+Buffer 1 now contains 50 wafers at time 8127.0
+Unit 1 is set idle to true at 8127.0
+Unit 2 is processing a batch at time 8127.0
+Task 2 begins processing batch Batch 19 of size 50 at time 8127.0
+Batch 19 of size 50 unloaded from Buffer 1 at time 8127.0
+Buffer 1 now contains 0 wafers at time 8127.0
+Batch 19 of size 50 processed in Task 2 and took 175.0 minutes finishing at 8304.0
+Unit 1 has no batches to process at time 8127.0
+Unit 1 has no batches to process at time 8127.0
+Batch 18 of size 50 loaded to Buffer 4 at time 8155.0
+Buffer 4 now contains 50 wafers at time 8155.0
+Unit 3 is set idle to true at 8155.0
+Unit 3 has no batches to process at time 8155.0
+Batch 19 of size 50 loaded to Buffer 2 at time 8304.0
+Buffer 2 now contains 50 wafers at time 8304.0
+Unit 2 is set idle to true at 8304.0
+Unit 1 is processing a batch at time 8304.0
+Task 3 begins processing batch Batch 19 of size 50 at time 8304.0
+Batch 19 of size 50 unloaded from Buffer 2 at time 8304.0
+Buffer 2 now contains 0 wafers at time 8304.0
+Batch 19 of size 50 processed in Task 3 and took 60.0 minutes finishing at 8366.0
+Unit 2 is processing a batch at time 8304.0
+Task 5 begins processing batch Batch 18 of size 50 at time 8304.0
+Batch 18 of size 50 unloaded from Buffer 4 at time 8304.0
+Buffer 4 now contains 0 wafers at time 8304.0
+Batch 18 of size 50 processed in Task 5 and took 40.0 minutes finishing at 8346.0
+Unit 2 is not idle. Cannot process at current time.
+Unit 3 has no batches to process at time 8304.0
+Batch 18 of size 50 loaded to Buffer 5 at time 8346.0
+Buffer 5 now contains 50 wafers at time 8346.0
+Unit 2 is set idle to true at 8346.0
+Unit 2 has no batches to process at time 8346.0
+Batch 19 of size 50 loaded to Buffer 3 at time 8366.0
+Buffer 3 now contains 50 wafers at time 8366.0
+Unit 1 is set idle to true at 8366.0
+Unit 3 is processing a batch at time 8366.0
+Task 4 begins processing batch Batch 19 of size 50 at time 8366.0
+Batch 19 of size 50 unloaded from Buffer 3 at time 8366.0
+Buffer 3 now contains 0 wafers at time 8366.0
+Batch 19 of size 50 processed in Task 4 and took 150 minutes finishing at 8518.0
+Unit 1 is processing a batch at time 8366.0
+Task 6 begins processing batch Batch 18 of size 50 at time 8366.0
+Batch 18 of size 50 unloaded from Buffer 5 at time 8366.0
+Buffer 5 now contains 0 wafers at time 8366.0
+Batch 18 of size 50 processed in Task 6 and took 25.0 minutes finishing at 8393.0
+Unit 1 is not idle. Cannot process at current time.
+Unit 2 has no batches to process at time 8366.0
+Batch 18 of size 50 loaded to Buffer 6 at time 8393.0
+Buffer 6 now contains 50 wafers at time 8393.0
+Unit 1 is set idle to true at 8393.0
+Unit 2 is processing a batch at time 8393.0
+Task 7 begins processing batch Batch 18 of size 50 at time 8393.0
+Batch 18 of size 50 unloaded from Buffer 6 at time 8393.0
+Buffer 6 now contains 0 wafers at time 8393.0
+Batch 18 of size 50 processed in Task 7 and took 50 minutes finishing at 8445.0
+Unit 1 has no batches to process at time 8393.0
+Unit 1 has no batches to process at time 8393.0
+Batch 18 of size 50 loaded to Buffer 7 at time 8445.0
+Buffer 7 now contains 50 wafers at time 8445.0
+Unit 2 is set idle to true at 8445.0
+Unit 2 has no batches to process at time 8445.0
+Batch 19 of size 50 loaded to Buffer 4 at time 8518.0
+Buffer 4 now contains 50 wafers at time 8518.0
+Unit 3 is set idle to true at 8518.0
+Unit 2 is processing a batch at time 8518.0
+Task 5 begins processing batch Batch 19 of size 50 at time 8518.0
+Batch 19 of size 50 unloaded from Buffer 4 at time 8518.0
+Buffer 4 now contains 0 wafers at time 8518.0
+Batch 19 of size 50 processed in Task 5 and took 40.0 minutes finishing at 8560.0
+Unit 3 is processing a batch at time 8518.0
+Task 8 begins processing batch Batch 18 of size 50 at time 8518.0
+Batch 18 of size 50 unloaded from Buffer 7 at time 8518.0
+Buffer 7 now contains 0 wafers at time 8518.0
+Batch 18 of size 50 processed in Task 8 and took 95.0 minutes finishing at 8615.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 20 of size 50 loaded to Buffer 0 at time 8550
+Buffer 0 now contains 50 wafers at time 8550
+Unit 1 is processing a batch at time 8550
+Task 1 begins processing batch Batch 20 of size 50 at time 8550
+Batch 20 of size 50 unloaded from Buffer 0 at time 8550
+Buffer 0 now contains 0 wafers at time 8550
+Batch 20 of size 50 processed in Task 1 and took 25.0 minutes finishing at 8577.0
+Batch 19 of size 50 loaded to Buffer 5 at time 8560.0
+Buffer 5 now contains 50 wafers at time 8560.0
+Unit 2 is set idle to true at 8560.0
+Unit 2 has no batches to process at time 8560.0
+Batch 20 of size 50 loaded to Buffer 1 at time 8577.0
+Buffer 1 now contains 50 wafers at time 8577.0
+Unit 1 is set idle to true at 8577.0
+Unit 2 is processing a batch at time 8577.0
+Task 2 begins processing batch Batch 20 of size 50 at time 8577.0
+Batch 20 of size 50 unloaded from Buffer 1 at time 8577.0
+Buffer 1 now contains 0 wafers at time 8577.0
+Batch 20 of size 50 processed in Task 2 and took 175.0 minutes finishing at 8754.0
+Unit 1 is processing a batch at time 8577.0
+Task 6 begins processing batch Batch 19 of size 50 at time 8577.0
+Batch 19 of size 50 unloaded from Buffer 5 at time 8577.0
+Buffer 5 now contains 0 wafers at time 8577.0
+Batch 19 of size 50 processed in Task 6 and took 25.0 minutes finishing at 8604.0
+Unit 1 is not idle. Cannot process at current time.
+Batch 19 of size 50 loaded to Buffer 6 at time 8604.0
+Buffer 6 now contains 50 wafers at time 8604.0
+Unit 1 is set idle to true at 8604.0
+Unit 1 has no batches to process at time 8604.0
+Batch 18 of size 50 loaded to Buffer 8 at time 8615.0
+Buffer 8 now contains 50 wafers at time 8615.0
+Unit 3 is set idle to true at 8615.0
+Unit 1 is processing a batch at time 8615.0
+Task 9 begins processing batch Batch 18 of size 50 at time 8615.0
+Batch 18 of size 50 unloaded from Buffer 8 at time 8615.0
+Buffer 8 now contains 0 wafers at time 8615.0
+Batch 18 of size 50 processed in Task 9 and took 15.0 minutes finishing at 8632.0
+Unit 3 has no batches to process at time 8615.0
+Unit 3 has no batches to process at time 8615.0
+Batch 18 of size 50 loaded to Buffer 9 at time 8632.0
+Finished processing batch Batch 18 of size 50. It is now in the final buffer at time 8632.0. Total number of wafers produced: 900
+Unit 1 is set idle to true at 8632.0
+Unit 1 has no batches to process at time 8632.0
+Batch 20 of size 50 loaded to Buffer 2 at time 8754.0
+Buffer 2 now contains 50 wafers at time 8754.0
+Unit 2 is set idle to true at 8754.0
+Unit 1 is processing a batch at time 8754.0
+Task 3 begins processing batch Batch 20 of size 50 at time 8754.0
+Batch 20 of size 50 unloaded from Buffer 2 at time 8754.0
+Buffer 2 now contains 0 wafers at time 8754.0
+Batch 20 of size 50 processed in Task 3 and took 60.0 minutes finishing at 8816.0
+Unit 2 is processing a batch at time 8754.0
+Task 7 begins processing batch Batch 19 of size 50 at time 8754.0
+Batch 19 of size 50 unloaded from Buffer 6 at time 8754.0
+Buffer 6 now contains 0 wafers at time 8754.0
+Batch 19 of size 50 processed in Task 7 and took 50 minutes finishing at 8806.0
+Unit 2 is not idle. Cannot process at current time.
+Batch 19 of size 50 loaded to Buffer 7 at time 8806.0
+Buffer 7 now contains 50 wafers at time 8806.0
+Unit 2 is set idle to true at 8806.0
+Unit 3 is processing a batch at time 8806.0
+Task 8 begins processing batch Batch 19 of size 50 at time 8806.0
+Batch 19 of size 50 unloaded from Buffer 7 at time 8806.0
+Buffer 7 now contains 0 wafers at time 8806.0
+Batch 19 of size 50 processed in Task 8 and took 95.0 minutes finishing at 8903.0
+Unit 2 has no batches to process at time 8806.0
+Unit 2 has no batches to process at time 8806.0
+Batch 20 of size 50 loaded to Buffer 3 at time 8816.0
+Buffer 3 now contains 50 wafers at time 8816.0
+Unit 1 is set idle to true at 8816.0
+Unit 1 has no batches to process at time 8816.0
+Batch 19 of size 50 loaded to Buffer 8 at time 8903.0
+Buffer 8 now contains 50 wafers at time 8903.0
+Unit 3 is set idle to true at 8903.0
+Unit 1 is processing a batch at time 8903.0
+Task 9 begins processing batch Batch 19 of size 50 at time 8903.0
+Batch 19 of size 50 unloaded from Buffer 8 at time 8903.0
+Buffer 8 now contains 0 wafers at time 8903.0
+Batch 19 of size 50 processed in Task 9 and took 15.0 minutes finishing at 8920.0
+Unit 3 is processing a batch at time 8903.0
+Task 4 begins processing batch Batch 20 of size 50 at time 8903.0
+Batch 20 of size 50 unloaded from Buffer 3 at time 8903.0
+Buffer 3 now contains 0 wafers at time 8903.0
+Batch 20 of size 50 processed in Task 4 and took 150 minutes finishing at 9055.0
+Unit 3 is not idle. Cannot process at current time.
+Batch 19 of size 50 loaded to Buffer 9 at time 8920.0
+Finished processing batch Batch 19 of size 50. It is now in the final buffer at time 8920.0. Total number of wafers produced: 950
+Unit 1 is set idle to true at 8920.0
+Unit 1 has no batches to process at time 8920.0
+Batch 20 of size 50 loaded to Buffer 4 at time 9055.0
+Buffer 4 now contains 50 wafers at time 9055.0
+Unit 3 is set idle to true at 9055.0
+Unit 2 is processing a batch at time 9055.0
+Task 5 begins processing batch Batch 20 of size 50 at time 9055.0
+Batch 20 of size 50 unloaded from Buffer 4 at time 9055.0
+Buffer 4 now contains 0 wafers at time 9055.0
+Batch 20 of size 50 processed in Task 5 and took 40.0 minutes finishing at 9097.0
+Unit 3 has no batches to process at time 9055.0
+Unit 3 has no batches to process at time 9055.0
+Batch 20 of size 50 loaded to Buffer 5 at time 9097.0
+Buffer 5 now contains 50 wafers at time 9097.0
+Unit 2 is set idle to true at 9097.0
+Unit 1 is processing a batch at time 9097.0
+Task 6 begins processing batch Batch 20 of size 50 at time 9097.0
+Batch 20 of size 50 unloaded from Buffer 5 at time 9097.0
+Buffer 5 now contains 0 wafers at time 9097.0
+Batch 20 of size 50 processed in Task 6 and took 25.0 minutes finishing at 9124.0
+Unit 2 has no batches to process at time 9097.0
+Unit 2 has no batches to process at time 9097.0
+Batch 20 of size 50 loaded to Buffer 6 at time 9124.0
+Buffer 6 now contains 50 wafers at time 9124.0
+Unit 1 is set idle to true at 9124.0
+Unit 2 is processing a batch at time 9124.0
+Task 7 begins processing batch Batch 20 of size 50 at time 9124.0
+Batch 20 of size 50 unloaded from Buffer 6 at time 9124.0
+Buffer 6 now contains 0 wafers at time 9124.0
+Batch 20 of size 50 processed in Task 7 and took 50 minutes finishing at 9176.0
+Unit 1 has no batches to process at time 9124.0
+Unit 1 has no batches to process at time 9124.0
+Batch 20 of size 50 loaded to Buffer 7 at time 9176.0
+Buffer 7 now contains 50 wafers at time 9176.0
+Unit 2 is set idle to true at 9176.0
+Unit 3 is processing a batch at time 9176.0
+Task 8 begins processing batch Batch 20 of size 50 at time 9176.0
+Batch 20 of size 50 unloaded from Buffer 7 at time 9176.0
+Buffer 7 now contains 0 wafers at time 9176.0
+Batch 20 of size 50 processed in Task 8 and took 95.0 minutes finishing at 9273.0
+Unit 2 has no batches to process at time 9176.0
+Unit 2 has no batches to process at time 9176.0
+Batch 20 of size 50 loaded to Buffer 8 at time 9273.0
+Buffer 8 now contains 50 wafers at time 9273.0
+Unit 3 is set idle to true at 9273.0
+Unit 1 is processing a batch at time 9273.0
+Task 9 begins processing batch Batch 20 of size 50 at time 9273.0
+Batch 20 of size 50 unloaded from Buffer 8 at time 9273.0
+Buffer 8 now contains 0 wafers at time 9273.0
+Batch 20 of size 50 processed in Task 9 and took 15.0 minutes finishing at 9290.0
+Unit 3 has no batches to process at time 9273.0
+Unit 3 has no batches to process at time 9273.0
+Batch 20 of size 50 loaded to Buffer 9 at time 9290.0
+Finished processing batch Batch 20 of size 50. It is now in the final buffer at time 9290.0. Total number of wafers produced: 1000
+Unit 1 is set idle to true at 9290.0
+Unit 1 has no batches to process at time 9290.0
+Number of events executed: 804
+The simulation ended at time 9290.0
+Comment: Interval between batches: 450
+1000,9290.0,20,50.0
