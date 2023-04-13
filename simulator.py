@@ -11,17 +11,17 @@ from productionLine import ProductionLine
 
 class Simulator:
 
-    def __init__(self, eventQueue: EventQueue, preLoadedBatches = []) -> None:
+    def __init__(self, eventQueue: EventQueue, interval: int = 0, preLoadedBatches = []) -> None:
         self.eventQueue = eventQueue
         self.productionLine = ProductionLine(eventQueue)
         if preLoadedBatches:
             for batch, time in preLoadedBatches:
                 self.eventQueue.createAndQueueEvent(time, self.productionLine.loadBatchToProductionLine, batch)
         else:
-            starterBatchGenerator = batchGenerator(33)
-            for i in range(33):
+            starterBatchGenerator = batchGenerator(50)
+            for i in range(20):
                 starterBatch = next(starterBatchGenerator)
-                self.eventQueue.createAndQueueEvent(i*0, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
+                self.eventQueue.createAndQueueEvent(i*interval, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
     def setTaskPriority(self, unit1TaskList: List, unit2TaskList: List, unit3TaskList: List) -> None:
         self.productionLine.unit1TaskNumbers = unit1TaskList
@@ -79,13 +79,6 @@ def main():
                 filepath = os.path.join(ROOT, 'simulations', filename)
                 with open(filepath + '.txt', 'w') as file:
                     file.write(log)
-
-
-
-
-
-
-    
 
 if __name__ == '__main__':
     main()
