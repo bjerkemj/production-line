@@ -11,15 +11,15 @@ from productionLine import ProductionLine
 
 class Simulator:
 
-    def __init__(self, eventQueue: EventQueue, preLoadedBactches = []) -> None:
+    def __init__(self, eventQueue: EventQueue, preLoadedBatches = []) -> None:
         self.eventQueue = eventQueue
         self.productionLine = ProductionLine(eventQueue)
-        if preLoadedBactches:
-            for batch, time in preLoadedBactches:
+        if preLoadedBatches:
+            for batch, time in preLoadedBatches:
                 self.eventQueue.createAndQueueEvent(time, self.productionLine.loadBatchToProductionLine, batch)
         else:
-            starterBatchGenerator = batchGenerator(50)
-            for i in range(20):
+            starterBatchGenerator = batchGenerator(33)
+            for i in range(33):
                 starterBatch = next(starterBatchGenerator)
                 self.eventQueue.createAndQueueEvent(i*0, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
