@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 folderName = 'simulations_plots'
-SAVE_FOLDER = os.path.join(ROOT, 'simulations_plots')
+SAVE_FOLDER = os.path.join(ROOT, 'simulations_orderingHeuristic_plots')
 
 def savePlotsFromSimulationsInFolder(folderName: str):
     folderPath = os.path.join(ROOT, folderName)
@@ -23,7 +23,9 @@ def createSinglePlotFromFilesInFolder(folderName: str, save: bool = True):
     for filepath in os.scandir(folderPath):
         fileName = os.path.basename(filepath.path)
         comment, finalStatsDict, finishedBatchTimes, numWafersProduced = getCommentAndDictionaryFromSimulation(filepath)
-        plt.plot(finishedBatchTimes, numWafersProduced, label = finalStatsDict)
+        # plt.plot(finishedBatchTimes, numWafersProduced, label = comment)
+        plt.plot(finishedBatchTimes, numWafersProduced)
+
     plt.legend()
     plt.xlabel('Time [minutes]')
     plt.ylabel('Number of wafers produced')
@@ -35,7 +37,6 @@ def createSinglePlotFromFilesInFolder(folderName: str, save: bool = True):
 
 
 def getCommentAndDictionaryFromSimulation(filepath: str):
-    print(filepath)
     with open(filepath, 'r') as file:
         lines = file.readlines()
         lines = [line.replace('\n', '') for line in lines]
@@ -69,8 +70,8 @@ def getCommentAndDictionaryFromSimulation(filepath: str):
         return comment, finalStatsDict, finishedBatchTimes, numWafersProduced
 
 def main():
-    folderName = 'simulations'
-    savePlotsFromSimulationsInFolder(folderName)
+    folderName = 'simulations_orderingHeuristic'
+    # savePlotsFromSimulationsInFolder(folderName)
     createSinglePlotFromFilesInFolder(folderName)
 
 

@@ -24,9 +24,10 @@ class Simulator:
                 self.eventQueue.createAndQueueEvent(i*interval, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
     def setTaskPriority(self, unit1TaskList: List, unit2TaskList: List, unit3TaskList: List) -> None:
-        self.productionLine.unit1TaskNumbers = unit1TaskList
-        self.productionLine.unit2TaskNumbers = unit2TaskList
-        self.productionLine.unit3TaskNumbers = unit3TaskList
+        self.productionLine.units[0].setTaskPriority(unit1TaskList)
+        self.productionLine.units[1].setTaskPriority(unit2TaskList)
+        self.productionLine.units[2].setTaskPriority(unit3TaskList)
+
 
 
     def run(self) -> None:
@@ -45,6 +46,7 @@ class Simulator:
         numberWafersProduced = self.productionLine.buffers[-1].getNumberOfWafersInBuffer()
         totalTime = self.eventQueue.oldEvents[-1].time
         numBatches = len(self.productionLine.buffers[-1].batches)
+
         averageBatchSize = numberWafersProduced/numBatches
         print(str(numberWafersProduced), str(totalTime), str(numBatches), str(averageBatchSize), sep = seperator)
 
@@ -57,13 +59,14 @@ def main():
     unit1PermuatiationList = list(itertools.permutations(unit1TaskNumbers))
     unit2PermuatiationList = list(itertools.permutations(unit2TaskNumbers))
     unit3PermuatiationList = list(itertools.permutations(unit3TaskNumbers))
+    counter = 0
     for prioUnit1 in unit1PermuatiationList:
         for prioUnit2 in unit2PermuatiationList:
             for prioUnit3 in unit3PermuatiationList:
-
-                                  
+                counter += 1
                 eventQueue = EventQueue()
                 simulator = Simulator(eventQueue)
+                simulator.setTaskPriority(prioUnit1, prioUnit2, prioUnit3)
                 old_stdout = sys.stdout
                 sys.stdout = buffer = io.StringIO()
                 simulator.run()
@@ -76,7 +79,7 @@ def main():
 
                 ROOT = os.path.dirname(os.path.abspath(__file__))
                 filename = datetime.datetime.now().strftime("%d-%m-%Y -%H-%M-%S")
-                filepath = os.path.join(ROOT, 'simulations', filename)
+                filepath = os.path.join(ROOT, 'simulations_orderingHeuristic', filename + str(counter))
                 with open(filepath + '.txt', 'w') as file:
                     file.write(log)
 

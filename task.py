@@ -19,6 +19,9 @@ class Task:
     def __repr__(self) -> str:
         return f'Task {self.taskNumber}'
     
+    def getTaskNumber(self) -> str:
+        return self.taskNumber
+    
     def setUnit(self, unit) -> None:
         self.unit = unit
     

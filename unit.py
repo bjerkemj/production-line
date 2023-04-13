@@ -17,6 +17,15 @@ class Unit:
     def addTask(self, task: Task) -> None:
         self.tasks.append(task)
 
+    def setTaskPriority(self, priorityTaskList: List[int]) -> None:
+        newTaskList = []
+        for taskID in priorityTaskList:
+            for task in self.tasks:
+                if task.getTaskNumber()== taskID:
+                    newTaskList.append(task)
+                    break
+        self.tasks = newTaskList
+
     def notifyTaskIsInQueue(self, time) -> None:
          if self.idle:
              self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
