@@ -78,11 +78,11 @@ def getBestPermutation(folderName):
             data = lines[-1].strip().split(',')
             solutions.append([data[1], comment, file_name])
     sorted_solutions = sorted(solutions, key=lambda x: float(x[0]))
-    print(sorted_solutions[:5])
+    [print(sol[:-1]) for sol in sorted_solutions[:5]]
 
 
 def main():
-    folderName = 'optimize_loadtimes_orderingHeuristic'
+    folderName = 'simulations_orderingHeuristic'
     ## savePlotsFromSimulationsInFolder(folderName)
     #createSinglePlotFromFilesInFolder(folderName)
     getBestPermutation(folderName)
