@@ -70,15 +70,15 @@ def getCommentAndDictionaryFromSimulation(filepath: str):
 def getBestTimes(folderName):
     solutions = []
     folderPath = os.path.join(ROOT, folderName)
-    for file_name in os.listdir(folderPath):
-        file_path = os.path.join(folderPath, file_name)
-        with open(file_path, 'r') as file:
+    for fileName in os.listdir(folderPath):
+        fileName = os.path.join(folderPath, fileName)
+        with open(fileName, 'r') as file:
             lines = file.readlines()
             comment = lines[-2].strip()[9:]
             data = lines[-1].strip().split(',')
-            solutions.append([data[1], comment, file_name])
-    sorted_solutions = sorted(solutions, key=lambda x: float(x[0]))
-    [print(sol[:-1]) for sol in sorted_solutions[:]]
+            solutions.append([data[1], comment, fileName])
+    sortedSolutions = sorted(solutions, key=lambda x: float(x[0]))
+    [print(sol[:-1]) for sol in sortedSolutions[:20]]
 
 
 def main():
