@@ -60,10 +60,7 @@ class Simulator:
         averageBatchSize = numberWafersProduced/numBatches
         print(str(numberWafersProduced), str(round(totalTime, 1)), str(numBatches), str(averageBatchSize), sep = seperator)
 
-
-
 def main():
-
     batchSizes = list(range(20, 51))
     for batchSize in batchSizes:
         eventQueue = EventQueue()
@@ -116,11 +113,3 @@ def main2():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-

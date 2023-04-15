@@ -1,10 +1,12 @@
+from typing import Any, Callable, List, Tuple, Union
+
 class TestObject:
     def fun(self, time, param1, param2):
         print('time is', time)
         print(param1, param2)
 
 class Event:
-    def __init__(self, time: float, object: object, function, *args) -> None:
+    def __init__(self, time: float, object: Any, function: Callable[..., None], *args: Any) -> None:
         self.time = time
         self.object = object
         self.function = function
@@ -48,7 +50,7 @@ class EventQueue:
     def isEmpty(self) -> bool:
         return len(self.eventset) == 0
 
-    def createAndQueueEvent(self, time:float, object:object, function, *args) -> None:
+    def createAndQueueEvent(self, time:float, object: Any, function: Callable[..., None], *args: Any) -> None:
         event = Event(time, object, function, *args)
         self.queueEvent(event)
 

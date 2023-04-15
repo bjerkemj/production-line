@@ -19,7 +19,7 @@ class Batch:
         # Maybe location should be a buffer or a task/unit? Not sure
         return self.location
     
-    def setLocation(self, location) -> None:
+    def setLocation(self, location: str) -> None:
         self.location = location
 
 def batchGenerator(batchSize: int = 20, batchNumber: int = 1) -> Batch:

@@ -3,7 +3,7 @@ from task import Task
 from eventManager import EventQueue
 
 class Unit:
-    def __init__(self, unitNumber: str, eventQueue = EventQueue, tasks: List[Task] = []) -> None:
+    def __init__(self, unitNumber: str, eventQueue: EventQueue = EventQueue, tasks: List[Task] = []) -> None:
         self.unitNumber = unitNumber
         self.eventQueue = eventQueue
         self.tasks = tasks
@@ -26,16 +26,16 @@ class Unit:
                     break
         self.tasks = newTaskList
 
-    def notifyTaskIsInQueue(self, time) -> None:
+    def notifyTaskIsInQueue(self, time: float) -> None:
          if self.idle:
              self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
 
-    def setIdleToTrue(self, time) -> None:
+    def setIdleToTrue(self, time: float) -> None:
         print(f'{str(self)} is set idle to true at {time}')
         self.idle = True
         self.eventQueue.createAndQueueEvent(time, self, self.processNextBatch)
 
-    def processNextBatch(self, time) -> None:
+    def processNextBatch(self, time: float) -> None:
         if self.idle:
             if any([task.hasBatchReadyToProcess() for task in self.tasks]):
                 print(str(self), 'is processing a batch at time', time)

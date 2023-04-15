@@ -80,14 +80,12 @@ def getBestTimes(folderName):
     sortedSolutions = sorted(solutions, key=lambda x: float(x[0]))
     [print(sol[:-1]) for sol in sortedSolutions[:20]]
 
-
 def main():
     folderName = 'simulations_batchSize'
     SAVE_FOLDER = os.path.join(ROOT, 'simulations_batchSize_plots')
     # savePlotsFromSimulationsInFolder(folderName)
     createSinglePlotFromFilesInFolder(folderName)
     getBestTimes(folderName)
-
 
 if __name__ == '__main__':
     main()

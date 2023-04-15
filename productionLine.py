@@ -4,14 +4,13 @@ from buffer import Buffer
 from task import Task
 from unit import Unit
 from eventManager import EventQueue
-import itertools
 
 class ProductionLine:
     unit1TaskNumbers = ['1', '3', '9', '6']
     unit2TaskNumbers = ['5', '7', '2']
     unit3TaskNumbers = ['4', '8']
 
-    def __init__(self, eventQueue: EventQueue) -> None:
+    def __init__(self, eventQueue: EventQueue = EventQueue()) -> None:
         self.buffers = []
         self.tasks = []
         self.buffers.append(Buffer('0', eventQueue, isFirstBuffer=True, capacity=math.inf))
@@ -43,9 +42,9 @@ class ProductionLine:
 if __name__ == '__main__':
     pl = ProductionLine()
     batch = Batch('1', 20)
-    print(batch.batchNumber)
-    print(batch.batchSize)
-    pl.loadBatchToProductionLine(batch)
+    print(batch.getBatchNumber())
+    print(batch.getBatchSize())
+    pl.loadBatchToProductionLine(0,batch)
 
     newline = "\n"
     for unit in pl.units:
@@ -53,9 +52,3 @@ if __name__ == '__main__':
         print(newline.join(f'{str(task)} with inputBuffer {str(task.inputBuffer)} and outputBuffer {str(task.outputBuffer)}' for task in unit.tasks))
 
     print(pl.units[0].tasks[-1].outputBuffer.isFinalBuffer)
-
-
-
-
-
-    

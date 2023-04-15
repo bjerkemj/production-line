@@ -5,7 +5,7 @@ from batch import Batch
 BUFFER_LOAD_TIME = 1 # minute
 
 class Buffer:
-    def __init__(self, bufferNumber: str, eventQueue = EventQueue, capacity: int = 120, isFinalBuffer : bool = False, isFirstBuffer:bool = False) -> None:
+    def __init__(self, bufferNumber: str, eventQueue: EventQueue, capacity: int = 120, isFinalBuffer : bool = False, isFirstBuffer:bool = False) -> None:
         self.bufferNumber = bufferNumber
         self.eventQueue = eventQueue
         self.capacity = capacity
@@ -67,12 +67,9 @@ class Buffer:
                 #     self.eventQueue.createAndQueueEvent(time, self.productionLine, self.productionLine.loadBatchToProductionLine, starterBatch)
 
         else:
-            print(f'ERROR. Some1 tried to load to a buffer that was full... {str(self)} was attempted loaded to by bacth {str(batch)} at time {time}')
+            print(f'ERROR. Someone tried to load to a buffer that was full... {str(self)} was attempted loaded to by bacth {str(batch)} at time {time}')
             print(f'{str(batch)} was discarded at {str(self)} at time {time}')
             raise Exception
-            print()
-            print()
-            print()
 
     def canAddBatch(self, batch: Batch) -> bool:
         return batch.batchSize + self.numberOfWafersInBuffer + self.reservedSpace <= self.capacity
@@ -82,7 +79,7 @@ class Buffer:
             [batch.getBatchSize() for batch in self.batches]
         )
 
-    def unloadOldestBatchFromBuffer(self, time) -> Batch:
+    def unloadOldestBatchFromBuffer(self, time: float) -> Batch:
         """ Needs time management. Returns the batch first added to the buffer (FIFO). Should be changed later. """
         if self.hasBatchReadyToProcess():
             self.numberOfWafersInBuffer = self.numberOfWafersInBuffer - self.batches[0].getBatchSize()
@@ -91,7 +88,6 @@ class Buffer:
             return self.batches.pop(0)
         else: 
             raise Exception
-            print('HERE IS THE ERROR@@@@@@@@@@@@@@@@@')
         
     def getOldestBatchFromBuffer(self) -> Batch:
         return self.batches[0]
