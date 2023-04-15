@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 import datetime
 import os
 import sys
