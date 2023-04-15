@@ -1,0 +1,8 @@
+['6161.0', 'Interval between batches: 250']
+['6322.0', 'Interval between batches: 0']
+['6322.0', 'Interval between batches: 150']
+['6322.0', 'Interval between batches: 75']
+['7303.0', 'Interval between batches: 350']
+['9290.0', 'Interval between batches: 450']
+['11103.0', 'Interval between batches: 550']
+['13060.0', 'Interval between batches: 653']
