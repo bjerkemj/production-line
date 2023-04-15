@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 from typing import Any, Callable, List, Tuple, Union
 
 class TestObject:

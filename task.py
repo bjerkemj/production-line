@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 from buffer import Buffer
 from eventManager import EventQueue
 

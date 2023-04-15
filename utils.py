@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 import os
 import matplotlib.pyplot as plt
 

@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 import math
 from batch import Batch
 from buffer import Buffer

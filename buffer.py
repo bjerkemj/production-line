@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 from typing import List
 from eventManager import EventQueue
 from batch import Batch

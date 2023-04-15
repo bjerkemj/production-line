@@ -1,3 +1,4 @@
+# Tinus F Alsos and Johan Bjerkem
 class Batch:
     def __init__(self, batchNumber: str, batchSize: int) -> None:
         self.batchNumber = batchNumber
