@@ -67,7 +67,7 @@ def getCommentAndDictionaryFromSimulation(filepath: str):
                 numWafersProduced.append(numWafers)
         return comment, finalStatsDict, finishedBatchTimes, numWafersProduced
     
-def getBestTimes(folderName):
+def getBestTimes(folderName: str, numSolutions: int = -1) -> None:
     solutions = []
     folderPath = os.path.join(ROOT, folderName)
     for fileName in os.listdir(folderPath):
@@ -78,7 +78,7 @@ def getBestTimes(folderName):
             data = lines[-1].strip().split(',')
             solutions.append([data[1], comment, fileName])
     sortedSolutions = sorted(solutions, key=lambda x: float(x[0]))
-    [print(sol[:-1]) for sol in sortedSolutions[:20]]
+    [print(sol[:-1]) for sol in sortedSolutions[:numSolutions]]
 
 def main():
     folderName = 'task_5'

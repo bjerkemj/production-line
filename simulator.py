@@ -61,6 +61,9 @@ class Simulator:
         print(str(numberWafersProduced), str(round(totalTime, 1)), str(numBatches), str(averageBatchSize), sep = seperator)
 
 def main():
+    # Use this to simulate batch sizes. You need to create a folder and pass its name below here:
+    folder = 'SET THIS YOURSELF'
+    # If you wish to test different time intervals, you can pass an interval variable (int) to the simulator constructor.
     batchSizes = list(range(20, 51))
     for batchSize in batchSizes:
         eventQueue = EventQueue()
@@ -76,11 +79,14 @@ def main():
 
         ROOT = os.path.dirname(os.path.abspath(__file__))
         filename = datetime.datetime.now().strftime("%d-%m-%Y -%H-%M-%S")
-        filepath = os.path.join(ROOT, 'simulations_batchSize2', filename + str(batchSize))
+        filepath = os.path.join(ROOT, folder, filename + str(batchSize))
         with open(filepath + '.txt', 'w') as file:
             file.write(log)
 
 def main2():
+    # Use this to simulate different task priorities. You need to create a folder and pass its name below here:
+    folder = 'SET THIS YOURSELF'
+    # If you wish to test different time intervals, you can pass an interval variable (int) to the simulator constructor.
     unit1TaskNumbers = ['1', '3', '6', '9']
     unit2TaskNumbers = ['2', '5', '7']
     unit3TaskNumbers = ['4', '8']
@@ -107,7 +113,7 @@ def main2():
 
                 ROOT = os.path.dirname(os.path.abspath(__file__))
                 filename = datetime.datetime.now().strftime("%d-%m-%Y -%H-%M-%S")
-                filepath = os.path.join(ROOT, 'simulations_orderingHeuristic_del', filename + str(counter))
+                filepath = os.path.join(ROOT, folder, filename + str(counter))
                 with open(filepath + '.txt', 'w') as file:
                     file.write(log)
 
