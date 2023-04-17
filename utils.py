@@ -1,5 +1,7 @@
 # Tinus F Alsos and Johan Bjerkem
+import io
 import os
+import sys
 import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -81,9 +83,10 @@ def getBestTimes(folderName: str, numSolutions: int = -1) -> None:
     sortedSolutions = sorted(solutions, key=lambda x: float(x[0]))
     [print(sol[:-1]) for sol in sortedSolutions[:numSolutions]]
 
+
 def main():
-    folderName = 'task_5'
-    SAVE_FOLDER = os.path.join(ROOT, 'task_5_plots')
+    folderName = 'megaSimulation'
+    # SAVE_FOLDER = os.path.join(ROOT, 'task_5_plots')
     # savePlotsFromSimulationsInFolder(folderName)
     # createSinglePlotFromFilesInFolder(folderName)
     getBestTimes(folderName)
